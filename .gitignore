@@ -1,0 +1,29 @@
+# Secrets
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Model files
+*.pkl
+*.joblib
+
+# API cache
+data/raw/google_books_enrichment.csv
+
+# Temporary files
+*.tmp
+*.log
