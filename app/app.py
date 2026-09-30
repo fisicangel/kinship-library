@@ -154,7 +154,7 @@ st.markdown(
         border: 1px solid #BAC8B3;
         border-radius: 18px;
         color: var(--charcoal);
-        min-height: 145px;
+        min-height: 88px;\n        max-height: 150px;
     }
 
     div[data-testid="stSelectbox"] > div > div {
@@ -488,6 +488,7 @@ for col, (label, prompt) in zip(prompt_cols, STARTING_QUESTIONS.items()):
 query = st.text_area(
     "Your inquiry",
     key="query_text",
+    height=90,
     placeholder=(
         "For example: I feel disconnected from Nature and I am looking for "
         "different ways of understanding belonging, reciprocity and our "
@@ -495,6 +496,8 @@ query = st.text_area(
     ),
     label_visibility="collapsed",
 )
+
+st.caption("Write freely. You do not need to press Ctrl + Enter. When your inquiry is ready, choose the options below and select Explore the Library.")
 
 st.markdown("#### What kind of knowledge would you like to encounter?")
 selected_orientation = st.radio(
