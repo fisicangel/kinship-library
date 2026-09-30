@@ -428,15 +428,6 @@ def render_book_card(row):
 
     st.link_button("Find this book ↗", search_url, use_container_width=True)
 
-    with st.expander("Why this recommendation?"):
-        st.write(
-            "This book appeared because its stored metadata is semantically "
-            "similar to the inquiry you entered. The score is a model similarity "
-            "measure, not a judgment of the book or a measure of how helpful it will be."
-        )
-        st.caption(f"Semantic similarity: {row['similarity']:.3f}")
-
-
 try:
     books = load_books()
     embeddings = load_embeddings()
