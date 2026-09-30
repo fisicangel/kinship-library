@@ -1,6 +1,9 @@
 from pathlib import Path
 from urllib.parse import quote_plus
 import html
+import re
+
+import requests
 
 import numpy as np
 import pandas as pd
@@ -26,6 +29,27 @@ THEME_LABELS = {
     "yoga_philosophy": "Yoga Philosophy",
     "ayurveda_indian_spirituality": "Ayurveda and Indian Spirituality",
     "yoga_way_of_life": "Yoga as a Way of Life",
+}
+
+KNOWLEDGE_ORIENTATIONS = {
+    "Open to all approaches": "",
+    "Philosophical and contemplative": (
+        "philosophical and contemplative knowledge, worldviews, meaning, consciousness, "
+        "ethics, spiritual philosophy, reflection and ways of understanding existence"
+    ),
+    "Scientific and ecological": (
+        "scientific and ecological knowledge, ecology, biology, environmental science, "
+        "systems thinking, research, evidence and empirical perspectives"
+    ),
+    "Embodied and practical": (
+        "embodied and practical knowledge, lived experience, somatic practice, movement, "
+        "Yoga, meditation, Ayurveda, exercises, methods and everyday application"
+    ),
+    "Ancestral and relational": (
+        "ancestral and relational knowledge, Indigenous knowledge, land based knowledge, "
+        "reciprocity, community, traditional ecological knowledge and relationships "
+        "with more than human worlds"
+    ),
 }
 
 STARTING_QUESTIONS = {
@@ -282,6 +306,25 @@ def load_model():
     return SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
 
 
+@st.cache_data(ttl=86400, show_spinner=False)
+def cover_exists(url):
+    if not url:
+        return False
+    try:
+        response = requests.get(url, timeout=4, stream=True)
+        content_type = response.headers.get("content-type", "")
+        return response.status_code == 200 and content_type.startswith("image/")
+    except requests.RequestException:
+        return False
+
+
+def normalize_title(title):
+    title = safe_text(title).lower()
+    title = re.sub(r"^the\s+", "", title)
+    title = re.sub(r"[^a-z0-9]+", " ", title)
+    return " ".join(title.split())
+
+
 def safe_text(value, fallback=""):
     if pd.isna(value):
         return fallback
@@ -297,9 +340,16 @@ def shorten(text, limit=420):
     return text[:limit].rsplit(" ", 1)[0] + "…"
 
 
-def recommend(query, books, embeddings, model, n=6, theme=None):
+def recommend(query, books, embeddings, model, n=6, theme=None, orientation=None):
+    orientation_text = KNOWLEDGE_ORIENTATIONS.get(orientation, "")
+    enriched_query = query
+    if orientation_text:
+        enriched_query = (
+            f"{query}\n\nThe reader would especially like to encounter: {orientation_text}."
+        )
+
     query_embedding = model.encode(
-        [query],
+        [enriched_query],
         normalize_embeddings=True,
         show_progress_bar=False,
     )[0]
@@ -312,9 +362,20 @@ def recommend(query, books, embeddings, model, n=6, theme=None):
 
     candidate_indices = np.where(eligible)[0]
     candidate_scores = similarities[candidate_indices]
+    ranked_indices = candidate_indices[np.argsort(candidate_scores)[::-1]]
 
-    order = np.argsort(candidate_scores)[::-1][:n]
-    selected_indices = candidate_indices[order]
+    selected_indices = []
+    seen_titles = set()
+
+    for idx in ranked_indices:
+        title_key = normalize_title(books.iloc[idx].get("title"))
+        if title_key and title_key in seen_titles:
+            continue
+        if title_key:
+            seen_titles.add(title_key)
+        selected_indices.append(idx)
+        if len(selected_indices) == n:
+            break
 
     results = books.iloc[selected_indices].copy()
     results["similarity"] = similarities[selected_indices]
@@ -330,7 +391,7 @@ def render_book_card(row):
     isbn = safe_text(row.get("isbn_clean"))
     cover = safe_text(row.get("cover_url"))
 
-    if cover:
+    if cover and cover_exists(cover):
         cover_html = (
             f'<img src="{html.escape(cover)}" '
             f'alt="Cover of {html.escape(title)}" '
@@ -444,11 +505,19 @@ query = st.text_area(
     label_visibility="collapsed",
 )
 
+st.markdown("#### What kind of knowledge would you like to encounter?")
+selected_orientation = st.radio(
+    "Knowledge orientation",
+    list(KNOWLEDGE_ORIENTATIONS.keys()),
+    horizontal=True,
+    label_visibility="collapsed",
+)
+
 control_a, control_b, control_c = st.columns([2.2, 1, 1])
 with control_a:
     theme_options = ["All paths"] + list(THEME_LABELS.keys())
     selected_theme = st.selectbox(
-        "Knowledge path",
+        "Optional collection path",
         theme_options,
         format_func=lambda x: "All knowledge paths" if x == "All paths" else THEME_LABELS[x],
     )
@@ -478,6 +547,7 @@ if explore:
                 model=model,
                 n=number_books,
                 theme=None if selected_theme == "All paths" else selected_theme,
+                orientation=selected_orientation,
             )
 
         st.divider()
@@ -486,7 +556,8 @@ if explore:
             '<div class="section-intro">'
             "These are invitations to explore rather than answers. The recommendations "
             "are based on semantic relationships between your words and the book metadata "
-            "available in the Kinship Library catalogue."
+            "available in the Kinship Library catalogue. Your selected knowledge orientation "
+            "gently steers the semantic search rather than assigning books to a fixed category."
             "</div>",
             unsafe_allow_html=True,
         )
