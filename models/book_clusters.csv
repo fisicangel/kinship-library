@@ -1,0 +1,716 @@
+source_id,title,author,collection_theme,cluster,pca_1,pca_2
+/works/OL6772557W,The ecology of human development,Urie Bronfenbrenner,humans_and_nature,0,-0.23022161,0.27539873
+/works/OL3458484W,People and nature,Emilio F. Moran,humans_and_nature,0,-0.3119805,0.2128238
+/works/OL2990533W,The green imperative,"Victor J. Papanek, Victor Papanek",humans_and_nature,0,-0.09551936,0.30391335
+/works/OL1805267W,Design with nature,Ian L. McHarg,humans_and_nature,0,-0.20556393,0.30757725
+/works/OL2911248W,"The death of nature: women, ecology, and the scientific revolution",Carolyn Merchant,humans_and_nature,0,-0.29690823,0.22437072
+/works/OL2740932W,Human geography,"Jerome Donald Fellmann, Arthur Getis, Judith Getis",humans_and_nature,0,-0.30643255,0.14969642
+/works/OL1830110W,Galen's Prophecy,Jerome Kagan,humans_and_nature,0,0.09001309,0.08285825
+/works/OL551091W,Man's responsibility for nature,John Arthur Passmore,humans_and_nature,0,-0.21807703,0.33335468
+/works/OL21348969W,Ecological Transition,John W. Bennett,humans_and_nature,0,-0.31674042,0.390228
+/works/OL3357280W,Biomimicry,Janine M. Benyus,humans_and_nature,0,-0.10717126,0.33998457
+/works/OL114261W,"Sex, ecology, spirituality",Ken Wilber,humans_and_nature,0,0.021129867,0.2499754
+/works/OL18202378W,Team human,Douglas Rushkoff,humans_and_nature,0,-0.048617996,0.24539621
+/works/OL1060172W,Ecology and equity,"Madhav Gadgil, Madhay Gadgil, Ramachandra Guha, Gadgil, Guha",humans_and_nature,0,-0.1919035,0.20388202
+/works/OL8498172W,Human Ecology,Gerald G. Marten,humans_and_nature,0,-0.3102718,0.3899719
+/works/OL17403903W,Understanding Human Ecology,Robert Dyball,humans_and_nature,0,-0.3107379,0.331204
+/works/OL2911252W,Ecological revolutions,Carolyn Merchant,humans_and_nature,0,-0.3419571,0.11609818
+/works/OL55017W,Human ecology,Bernard Grant Campbell,humans_and_nature,0,-0.308289,0.2892357
+/works/OL21103357W,Ecology,David T. Krohne,humans_and_nature,0,-0.2966954,0.33287752
+/works/OL20560596W,"Man, nature, and ecology",Keith Reid,humans_and_nature,0,-0.32132584,0.41294515
+/works/OL12613981W,Human ecology,Bernard Campbell,humans_and_nature,0,-0.29259458,0.26746947
+/works/OL5717771W,Environmental philosophy,Christopher Belshaw,humans_and_nature,0,-0.24464877,0.42563796
+/works/OL1975475W,Sacred ecology,Fikret Berkes,humans_and_nature,0,-0.2154742,0.12015481
+/works/OL15916672W,Human dimensions of ecological restoration,Dave Egan,humans_and_nature,0,-0.29181626,0.33554977
+/works/OL4446615W,The forest and the sea,Marston Bates,humans_and_nature,0,-0.3203542,0.24866708
+/works/OL20156572W,Being Ecological,Timothy Morton,humans_and_nature,0,-0.28186384,0.35465297
+/works/OL16184491W,Human-nature interactions in the anthropocene,Marion Glaser,humans_and_nature,0,-0.38845116,0.3447263
+/works/OL2110114W,Last Child in the Woods,Richard Louv,humans_and_nature,0,-0.1408921,0.0701272
+/works/OL24398109W,Islands of Abandonment,Cal Flyn,humans_and_nature,0,-0.27361655,0.075565726
+/works/OL3005287W,Natural capital and human economic survival,"Thomas Prugh, Robert Costanza, Herman Daly, Robert J. A. Goodland, John H. Cumberland, Richard B. Norgaard",humans_and_nature,0,-0.27990636,0.23137507
+/works/OL21331068W,Environmental Humanities and Theologies,Rod Giblett,humans_and_nature,0,-0.21361914,0.2979113
+/works/OL27856719W,Routledge Handbook of the Digital Environmental Humanities,"Charles Travis, Deborah P. Dixon, Luke Bergmann, Robert Legg, Arlene Crampsie",humans_and_nature,0,-0.2735207,0.29196504
+/works/OL66393W,Environmental science,"G. Tyler Miller, Scott Spoolman",humans_and_nature,0,-0.3339595,0.40261245
+/works/OL21306193W,Environmental Human Rights,"Markku Oksanen, Ashley Dodsworth, Selina O'Doherty",humans_and_nature,0,-0.25837314,0.39725775
+/works/OL21322280W,Environmental Human Rights,Jan Hancock,humans_and_nature,0,-0.2878622,0.40690002
+/works/OL20228613W,The Environmental Humanities,"Robert S Emmett, David E. Nye",humans_and_nature,0,-0.32772347,0.2068513
+/works/OL25318280W,Introduction to the Environmental Humanities,"J. Andrew Hubbell, John Ryan",humans_and_nature,0,-0.41435254,0.30425605
+/works/OL21289761W,Global Ecologies and the Environmental Humanities,"Elizabeth M. DeLoughrey, Jill Didur, Anthony Carrigan",humans_and_nature,0,-0.37513798,0.24801546
+/works/OL20216290W,Disability Studies and the Environmental Humanities,"Sarah Jaquette Ray, Stacy Alaimo",humans_and_nature,0,-0.14207704,0.2553061
+/works/OL2747493W,Environmental Science,"William P. Cunningham, Mary Ann Cunningham, Barbara Woodworth Saigo",humans_and_nature,0,-0.33201885,0.35798714
+/works/OL21281758W,Routledge Companion to the Environmental Humanities,"Ursula K. Heise, Jon Christensen",humans_and_nature,0,-0.30576426,0.32706028
+/works/OL25757305W,Environmental Humanities and the Uncanny,Rod Giblett,humans_and_nature,0,-0.15596859,0.21808097
+/works/OL21126517W,Environmental Humanities,"Iovino OPPERMANN, Serenella Iovino, Serpil Oppermann",humans_and_nature,0,-0.17593355,0.11962411
+/works/OL25333204W,"Epistemic Justice, Mindfulness, and the Environmental Humanities",Janelle Adsit,humans_and_nature,0,-0.132222,0.24886574
+/works/OL17566439W,"Avatar and Nature Spirituality
+            
+                Environmental Humanities",BRON TAYLOR,humans_and_nature,0,-0.09523788,0.13736719
+/works/OL28349631W,"Religion, Narrative, and the Environmental Humanities",Matthew Newcomb,humans_and_nature,0,-0.18592584,0.3079001
+/works/OL25772080W,Environmental Humanities in the New Himalayas,"Dan Smyer Yü, Erik de Maaker",humans_and_nature,0,-0.17113838,0.1273038
+/works/OL25326089W,Cambridge Companion to Environmental Humanities,"Jeffrey Cohen, Stephanie Foote",humans_and_nature,0,-0.3173435,0.36991665
+/works/OL27858103W,Environmental Humanities of Extraction in Africa,"James Ogude, Tafadzwa Mushonga",humans_and_nature,0,-0.28155228,0.20448944
+/works/OL25744614W,Grounding Education in Environmental Humanities,"Lucas F. Johnston, Dave Aftandilian",humans_and_nature,0,-0.25174192,0.2675626
+/works/OL14240W,Environmental science,"Eldon D. Enger, Richard J. Kormelink, Bradley F. Smith",humans_and_nature,0,-0.30564648,0.30140844
+/works/OL19061W,Environmental science,"Bernard J. Nebel, Richard T. Wright",humans_and_nature,0,-0.3135948,0.41870335
+/works/OL27640562W,Eighteenth-Century Environmental Humanities,"Jeremy Chow, Elliot Patsoura, Annette Hulbert, Adam Sweeting",humans_and_nature,0,-0.31918874,0.26993257
+/works/OL21305633W,Ecological Exile,Derek Gladwin,humans_and_nature,0,-0.35749218,0.17461418
+/works/OL2011849W,Environmental science,"Daniel B. Botkin, Edward A. Keller, Daniel Botkin, Edward Keller",humans_and_nature,0,-0.2561868,0.28839648
+/works/OL25328736W,Bloomsbury Handbook to the Medical-Environmental Humanities,"Scott Slovic, Swarnalatha Rangarajan, Vidya Sarveswaran",humans_and_nature,0,-0.10752262,0.3463331
+/works/OL13333149W,An Approach to environmental psychology,"Albert Mehrabian, James A. Russell",humans_and_nature,0,-0.22670278,0.31624633
+/works/OL25183576W,Rethinking Invasion Ecologies from the Environmental Humanities,"Jodi Frawley, Iain McCalman",humans_and_nature,0,-0.37939167,0.30654776
+/works/OL27808768W,Environmental Human Rights in the Anthropocene,"Walter F. Baber, James May",humans_and_nature,0,-0.35946906,0.37196702
+/works/OL14868264W,More Than Human,Theodore Sturgeon,humans_and_nature,0,-0.06549589,0.28811732
+/works/OL15845262W,The spell of the sensuous,David Abram,humans_and_nature,0,-0.046029292,0.22900522
+/works/OL3977619W,No more than human,Maura Laverty,humans_and_nature,2,-0.0491511,-0.17149131
+/works/OL8526586W,More Than Human,Ramez Naam,humans_and_nature,0,0.02868931,0.07447994
+/works/OL21288260W,Participatory Research in More-Than-Human Worlds,"Michelle Bastian, Owain Jones, Niamh Moore, Emma Roe",humans_and_nature,0,-0.34704557,0.3699679
+/works/OL16672076W,More than human,Tim Flach,humans_and_nature,0,-0.2019217,0.0795068
+/works/OL25761558W,Injecting Bodies in More-Than-human Worlds,Fay Dennis,humans_and_nature,0,0.080312826,0.1251037
+/works/OL21213643W,Data Selves,Deborah Lupton,humans_and_nature,0,-0.076711066,0.03134067
+/works/OL21340028W,Walking Methodologies in a More-Than-human World,"Stephanie Springgay, Sarah E. Truman",humans_and_nature,0,-0.07019336,0.1399616
+/works/OL20593720W,Healthy Urban Environments,Cecily Maller,humans_and_nature,0,-0.1991549,0.21048854
+/works/OL21279904W,"Humans, Animals and Biopolitics","Kristin Asdal, Tone Druglitrø, Steve Hinchliffe",humans_and_nature,0,-0.26586202,0.23912233
+/works/OL20693631W,Radical Environmentalism,J. Cianchi,humans_and_nature,0,-0.13891299,0.33630842
+/works/OL37832213W,Designing More-Than-Human Smart Cities,"Sara Heitlinger, Marcus Foth, Rachel Clarke",humans_and_nature,0,-0.18372282,0.25548583
+/works/OL30949652W,I Love My Dog More Than Humans,Pleaza,humans_and_nature,0,-0.0151831,0.054206517
+/works/OL29984787W,More Than Human,Raymond Long,humans_and_nature,0,-0.11323743,0.21651776
+/works/OL20747836W,Anthropocene Psychology,Matthew Adams,humans_and_nature,0,-0.26049182,0.29677397
+/works/OL21679021W,Biopolitics of the More-Than-Human,Joseph Pugliese,humans_and_nature,0,-0.32867563,0.24125414
+/works/OL20725867W,More-than-Human Sociology,O. Pyyhtinen,humans_and_nature,0,-0.108553655,0.08396457
+/works/OL37577716W,More-Than-Human Aesthetics,"Melanie Sehgal, Alex Wilkie",humans_and_nature,0,-0.15757078,0.20792249
+/works/OL29223159W,More-Than-Human Choreography,Moritz Frischkorn,humans_and_nature,0,0.029366583,0.15199961
+/works/OL21323285W,City Is More Than Human,"Frederick L. Brown, Paul S. Sutter",humans_and_nature,0,-0.29798463,0.16103905
+/works/OL37570929W,Digital Ecologies,"Jonathon Turnbull, Adam Searle, Henry Anderson-Elliott, Eva Haifa Giraud",humans_and_nature,0,-0.23745368,0.29558057
+/works/OL39132171W,More-Than-Human Design in Practice,"Anton Poikolainen Rosén, Antti Salovaara, Andrea Botero, Marie Louise Juul Søndergaard",humans_and_nature,0,-0.15476799,0.43564695
+/works/OL36114442W,Design for More-Than-Human Futures,"Martín Tironi, Marcos Chilet, Pablo Hermansen, Carola Marín",humans_and_nature,0,-0.20558698,0.2082975
+/works/OL25131888W,Mammoth Books Presents More Than Human,"Stephen Volk, Brian Lumley",humans_and_nature,0,-0.1472162,0.11406223
+/works/OL100871W,Ecofeminism,"Maria Mies, Vandana Shiva, Ariel Salleh",humans_and_nature,0,-0.2893159,0.37491524
+/works/OL18327742W,Ecofeminism,Karen Warren,humans_and_nature,0,-0.25442162,0.31044006
+/works/OL18242711W,Ecofeminism,Greta Claire Gaard,humans_and_nature,0,-0.29025194,0.41854143
+/works/OL8676459W,Healing the Wounds,Judith Plant,humans_and_nature,0,-0.19967607,0.26625678
+/works/OL21247119W,Ecofeminism and Systems Thinking,Anne Stephens,humans_and_nature,0,-0.28925148,0.27510476
+/works/OL3949964W,Reweaving The World,Irene Diamond,humans_and_nature,0,-0.20445961,0.29126593
+/works/OL19983979W,Ecofeminism,"Carol J. Adams, Lori Gruen",humans_and_nature,0,-0.35999036,0.33202294
+/works/OL17411210W,Ecofeminism And The Sacred,Carol J. Adams,humans_and_nature,0,-0.106188,0.33918604
+/works/OL13569451W,Ecofeminism as politics,Ariel Salleh,humans_and_nature,0,-0.30503795,0.24879466
+/works/OL16143485W,Ecofeminism revisited,Chāyā Dātāra,humans_and_nature,0,-0.17983526,0.13632168
+/works/OL18375960W,Ecofeminism and globalization,"Heather Eaton, Heather Eaton, Lois Ann Lorentzen",humans_and_nature,0,-0.28781703,0.2933005
+/works/OL21154769W,Critical Ecofeminism,Greta Gaard,humans_and_nature,0,-0.23774637,0.3253579
+/works/OL21280913W,Contemporary Perspectives on Ecofeminism,"Mary Phillips, Nick Rumens",humans_and_nature,0,-0.32302785,0.38040924
+/works/OL21348752W,Literature and Ecofeminism,"Douglas A. Vakoch, Sam Mickey",humans_and_nature,0,-0.2338451,0.16936381
+/works/OL29414289W,Ecofeminism,"Karen Warren, Nisvan Erkal",humans_and_nature,0,-0.27725238,0.28331095
+/works/OL836803W,Longing for running water,Ivone Gebara,humans_and_nature,0,-0.16763584,0.14652745
+/works/OL25325300W,Ecofeminism and the Indian Novel,Sangita Patil,humans_and_nature,0,-0.10911951,0.0021995571
+/works/OL28018737W,"D. H. Lawrence, Ecofeminism and Nature",Terry Gifford,humans_and_nature,0,-0.28623927,0.39004552
+/works/OL21263788W,Changing Nature of Eco/Feminism,Niamh Moore,humans_and_nature,0,-0.19088644,0.28749567
+/works/OL21346563W,Place and Postcolonial Ecofeminism,Shazia Rahman,humans_and_nature,0,-0.059566326,0.1087358
+/works/OL37572625W,Ecofeminism on the Edge,"Goran &#272;ur&#273;evi&#263;, Suzana Marjani&#263;",humans_and_nature,0,-0.25550428,0.15648243
+/works/OL27857995W,Routledge Handbook of Ecofeminism and Literature,Douglas A. Vakoch,humans_and_nature,0,-0.22479859,0.22239083
+/works/OL21677740W,Ecofeminism in Dialogue,"Douglas A. Vakoch, Sam Mickey, Anna Bedford",humans_and_nature,0,-0.3117203,0.3225622
+/works/OL29370212W,Ecofeminism,Karen J. Warren,humans_and_nature,0,-0.23753701,0.39322245
+/works/OL42815769W,What is ecofeminism anyway?,"Cathleen McGuire, Colleen McGuire, Ecofeminist Visions Emerging",humans_and_nature,0,-0.2615181,0.272408
+/works/OL8651826W,Deep Ecology & Anarchism,Murray Bookchin,humans_and_nature,0,-0.21996966,0.264592
+/works/OL4312153W,Deep ecology,Bill Devall,humans_and_nature,0,-0.33662584,0.32273275
+/works/OL16980162W,Deep Ecology for the 21st century,George Sessions,humans_and_nature,0,-0.22332184,0.40250608
+/works/OL20987448W,Deep Ecology Movement,"Alan Drengson, Yuichi Inoue, Arne Naess, Gary Snyder",humans_and_nature,0,-0.1957221,0.43902594
+/works/OL2931619W,Eco-socialism,David Pepper,humans_and_nature,0,-0.26591834,0.42719933
+/works/OL20985707W,Deep Ecology,"Bill Devall, George Sessions",humans_and_nature,0,-0.17845842,0.44172606
+/works/OL21312857W,Spinoza and Deep Ecology,Eccy de Jonge,humans_and_nature,0,-0.2153251,0.32859236
+/works/OL25753831W,Gaia Psyche and Deep Ecology,Andrew Fellows,humans_and_nature,0,-0.17237796,0.30867696
+/works/OL4774634W,How deep is deep ecology?,George Bradford,humans_and_nature,0,-0.24605875,0.27924123
+/works/OL9214042W,Buddhism and Deep Ecology,"Daniel H., Ph.D. Henning",humans_and_nature,0,-0.0060344115,0.2868113
+/works/OL25809108W,"Deep Ecology, Business Ethics and Personal Responsibility",Knut Johannessen Ims,humans_and_nature,0,-0.09069071,0.2923882
+/works/OL14861760W,Toward a naturalistic political theory,Terry Hoy,humans_and_nature,0,-0.16061263,0.29671556
+/works/OL16063987W,"Dark night, early dawn",Christopher M. Bache,humans_and_nature,1,0.12464527,0.070927106
+/works/OL4034189W,Spinoza and the deep ecology movement,Arne Naess,humans_and_nature,0,-0.21066967,0.25961542
+/works/OL18205994W,Beneath the surface,"Eric Katz, David Rothenberg",humans_and_nature,0,-0.23636681,0.3686546
+/works/OL37411815W,Approaching deep ecology,Warwick Fox,humans_and_nature,0,-0.3302863,0.43407118
+/works/OL4286898W,Regarding nature,Andrew McLaughlin,humans_and_nature,0,-0.27614114,0.2722985
+/works/OL25789700W,Living Deep Ecology,Sing C. Chew,humans_and_nature,0,-0.33410576,0.22873779
+/works/OL8978432W,The Culture of Extinction,Frederic L. Bender,humans_and_nature,0,-0.34445587,0.18109599
+/works/OL2946995W,Building for Life,Stephen R. Kellert,humans_and_nature,0,-0.0814938,0.3721681
+/works/OL17658231W,Loneliness,John T. Cacioppo,humans_and_nature,0,0.052469686,0.10625679
+/works/OL1878299W,Social Intelligence,Daniel Goleman,humans_and_nature,0,0.088715665,0.18086796
+/works/OL16927611W,The good in nature and humanity,"Stephen R. Kellert, Timothy J. Farnham",humans_and_nature,0,-0.18439414,0.44839892
+/works/OL1860194W,Place-based education,"David Sobel, Smith, Gregory A.",humans_and_nature,0,-0.23903313,0.18292066
+/works/OL8417293W,Connected Lives,Ruth E. Groenhout,humans_and_nature,0,-0.0258366,0.19916125
+/works/OL15413802W,Nature and culture,Sarah Pilgrim,humans_and_nature,0,-0.31003234,0.17022514
+/works/OL2173032W,Wittgenstein,P. M. S. Hacker,humans_and_nature,1,0.086937115,0.008974163
+/works/OL7910541W,Survival of the Sickest,"Sharon Moalem, Jonathan Prince",humans_and_nature,0,-0.03551479,0.059017014
+/works/OL15988667W,Natural learning for a connected world,Renate Nummela Caine,humans_and_nature,0,-0.073790334,0.14445089
+/works/OL15981266W,Human transit,Jarrett Walker,humans_and_nature,0,-0.07159701,0.231601
+/works/OL25756070W,Urbanizing Nature,Tim Soens,humans_and_nature,0,-0.36114267,0.26319924
+/works/OL17803016W,"The good in nature and humanity : connecting science, religion, and spirituality with the natural world",,humans_and_nature,0,-0.13215616,0.29225546
+/works/OL35495999W,"Literature. The Human Experience, Reading and Writing--Twelfth Edition","Richard Abcarian, Marvin Klotz, Samuel Cohen, Chimamanda Ngozi Adichie, Kate Chopin",humans_and_nature,0,-0.0902607,0.15525235
+/works/OL13776751W,Planning connections,N. J. Pointner,humans_and_nature,0,0.027829522,0.15317282
+/works/OL8002905W,The primordial bond,Stephen H. Schneider,humans_and_nature,0,-0.15063745,0.33455598
+/works/OL2672901W,Awakening to Nature,Charles Cook,humans_and_nature,0,-0.17195782,0.28401762
+/works/OL3342230W,The primordial bond,Stephen Henry Schneider,humans_and_nature,0,-0.20059529,0.2502428
+/works/OL1906389W,Earth signs,Grey Wolf,humans_and_nature,0,-0.038231697,0.15847121
+/works/OL1824964W,The voice of the infinite in the small,Joanne Elizabeth Lauck,humans_and_nature,0,-0.102094285,0.13912386
+/works/OL26509611W,"Connection to Nature, Deep Ecology, and Conservation Social Science","Christian Diehm, Holmes Rolston III",humans_and_nature,0,-0.33518457,0.41345277
+/works/OL26455875W,Earth changes and the human-cosmic connection,Pierre Lescaudron,humans_and_nature,0,-0.14787231,0.097536616
+/works/OL300151W,Yogasūtra,Patañjali.,yoga_philosophy,1,0.5853466,-0.015515228
+/works/OL262819W,Light on the Yoga Sutras of Patanjali,B. K. S. Iyengar,yoga_philosophy,1,0.5659413,0.027630458
+/works/OL8163325W,Patanjali Yoga Sutras,Swami Prabhavananda,yoga_philosophy,1,0.6081418,0.08829945
+/works/OL30067202W,Yoga-Sutra,Kalashatra Govinda,yoga_philosophy,1,0.55840504,0.025218397
+/works/OL20214983W,The Yoga Sutras of Patanjali,Patanjali,yoga_philosophy,1,0.64870256,0.06463629
+/works/OL3264168W,The yoga sutras of Patanjali,Satchidananda Swami.,yoga_philosophy,1,0.67681605,0.0763379
+/works/OL10724938W,How to know God,Patañjali.,yoga_philosophy,1,0.46003413,0.020395271
+/works/OL39731762W,Yoga Sutras of Patanjali,Charles Johnston,yoga_philosophy,1,0.49715406,0.05144063
+/works/OL24381891W,Yoga Sastra,Patañjali,yoga_philosophy,1,0.45923015,0.00014097468
+/works/OL29227593W,Yoga Sutras of Patanjali,"Charles Johnston, Christopher Harding",yoga_philosophy,1,0.57595235,0.1222195
+/works/OL41336205W,Patanjali's Yoga Sutras,"Swami Swami Vivekanand, Uday Bhattacharyya",yoga_philosophy,1,0.59852624,0.029516928
+/works/OL8708299W,The Yoga Sutras of Patanjali,Sri S. Satchidananda,yoga_philosophy,1,0.6630668,0.07048223
+/works/OL13654174W,The Yoga sutras of Patañjali,Edwin F. Bryant,yoga_philosophy,1,0.61446464,-0.02596353
+/works/OL29652747W,Yoga Sutras of Patanjali,Swami Vivekananda,yoga_philosophy,1,0.57401055,0.082410775
+/works/OL20461429W,The Yoga Sutras Of Patanjali,Alistair Shearer,yoga_philosophy,1,0.5428884,0.14366323
+/works/OL30556393W,Patanjali Yoga Sutras,Swami Vivekananda,yoga_philosophy,1,0.5390287,0.046781242
+/works/OL28171549W,Yoga sutras of Patanjali,William Q. Judge,yoga_philosophy,1,0.61443746,0.10141958
+/works/OL300150W,Yogasūtra. English,Patañjali.,yoga_philosophy,1,0.55660325,-0.0856518
+/works/OL35778796W,Patanjali's Yoga Sutras,Swami Vivekananda,yoga_philosophy,1,0.5854639,0.0806916
+/works/OL9083388W,"The Holy Vedas ; Rig Veda, Yajur Veda, Sama Veda, Atharva Veda",Dipavali,yoga_philosophy,1,0.39304507,-0.17041408
+/works/OL34079647W,Rig-Veda,Hermann Grassmann,yoga_philosophy,1,0.122364044,-0.039528027
+/works/OL1770644W,The Vedas,Ralph T. H. Griffith,yoga_philosophy,1,0.3830665,-0.097207524
+/works/OL8720692W,Rig-Veda Sanhita,"H. H. Wilson, Edward B. Cowell, William Frederick Webster",yoga_philosophy,1,0.271791,-0.10304696
+/works/OL11500W,The religion and philosophy of the Veda and Upanishads,Arthur Berriedale Keith,yoga_philosophy,1,0.22848476,-0.013793008
+/works/OL29647567W,Vedas,"sama, yajur, atharva, acharya rig",yoga_philosophy,1,0.37901935,-0.05647736
+/works/OL5764868W,Building architecture of Sthāpatya Veda,V. Ganapathi,yoga_philosophy,1,0.18150155,-0.13875999
+/works/OL1630023W,The religion of the Veda =,Hermann Oldenberg,yoga_philosophy,1,0.10561555,-0.022452211
+/works/OL3292141W,Nasty Nature (Horrible Science),Nick Arnold,yoga_philosophy,0,-0.17235467,0.14755595
+/works/OL24364471W,The Rig Veda,"Anonymous, Ralph T. H. Griffith",yoga_philosophy,1,0.3512817,-0.05967562
+/works/OL5979130W,Human Physiology,Tony Nader,yoga_philosophy,1,0.19866703,0.26153433
+/works/OL14908914W,The Rig Veda,"Anonymous, Wendy Doniger",yoga_philosophy,1,0.35210475,-0.054522146
+/works/OL22492394W,The Vedas and Upanishads for Children,Roopa Pai,yoga_philosophy,1,0.18995042,-0.023756111
+/works/OL1497719W,Sanskrit Grammar,William Dwight Whitney,yoga_philosophy,1,0.23226908,-0.116579026
+/works/OL19001617W,Rig Veda,"Barend A. van Nooten, Gary B. Holland, Barend Van Nooten, Gary Holland",yoga_philosophy,1,0.26941177,-0.08590639
+/works/OL17346002W,"Rig-veda, oder, Die heiligen lieder der Brahmanen","F. Max Müller, D. 1387 Syaa",yoga_philosophy,1,0.24447887,-0.13422985
+/works/OL20393863W,The Upanishads,Swami Paramananda,yoga_philosophy,1,0.19988775,-0.038844828
+/works/OL27074063W,Upanishads,Acharya Prashant,yoga_philosophy,1,0.38384694,0.023157068
+/works/OL24405478W,The Upanishads. Tr. by F.M. Müller,Upanishads,yoga_philosophy,2,0.018700665,-0.12397318
+/works/OL17037355W,The Upanishads,Juan Mascaró,yoga_philosophy,1,0.23950462,-0.20669112
+/works/OL2091331W,Philosophie der Upanishad's,Paul Deussen,yoga_philosophy,1,0.20261969,0.020199453
+/works/OL27861284W,Ishavasya Upanishad,Acharya Prashant,yoga_philosophy,1,0.2904589,0.01324742
+/works/OL27865431W,Mundaka Upanishad,Acharya Prashant,yoga_philosophy,1,0.3723452,-0.043409996
+/works/OL12882728W,The Upanishads,"Juan Mascaró, Anonymous",yoga_philosophy,1,0.25433454,-0.0077537354
+/works/OL27865446W,Niralamba Upanishad,Acharya Prashant,yoga_philosophy,1,0.3620774,-0.009322258
+/works/OL27861890W,Niralamba Upanishad (Vol 1),Acharya Prashant,yoga_philosophy,1,0.3585177,-0.003226522
+/works/OL264642W,The Upanishads,Anonymous,yoga_philosophy,1,0.3174206,0.016497051
+/works/OL27861902W,Mandukya Upanishad,Acharya Prashant,yoga_philosophy,1,0.3091501,0.04247811
+/works/OL8163339W,The Upanishads,Swami Prabhavananda,yoga_philosophy,1,0.31866714,-0.010691032
+/works/OL18068366W,The Upanishads,,yoga_philosophy,1,0.3083234,0.04830483
+/works/OL16275093W,Upaniṣads,Patrick Olivelle,yoga_philosophy,1,0.2456503,-0.10240134
+/works/OL518455W,Dialogue with death,Eknath Easwaran,yoga_philosophy,1,0.18862723,0.06831065
+/works/OL8614817W,The Upanishads,Aurobindo Ghose,yoga_philosophy,1,0.25790018,-0.10665001
+/works/OL20991966W,Upanishads,"Swami Prabhavananda, Frederick Manchester",yoga_philosophy,1,0.32220045,0.01123271
+/works/OL34965590W,The Upanishads,"Jacob Needleman, Eknath Easwaran",yoga_philosophy,1,0.3006702,-0.025657479
+/works/OL40010148W,Upanishads,Lahiri Mahasaya,yoga_philosophy,1,0.4690275,-0.021805316
+/works/OL18334989W,The Bhagavad gita,Juan Mascaró,yoga_philosophy,1,0.23691785,-0.0558945
+/works/OL8622520W,Bhagavad-Gita As It Is,A. C. Bhaktivedanta Swami Srila Prabhupada,yoga_philosophy,1,0.44023755,0.021619545
+/works/OL528084W,The Bhagavad Gita,Yogananda Paramahansa,yoga_philosophy,1,0.44344717,-0.040719498
+/works/OL4094205W,Paths to god,Ram Dass.,yoga_philosophy,1,0.3817402,0.0047159865
+/works/OL25773442W,Bhagavad Gita,Ranchor Prime,yoga_philosophy,1,0.2613371,0.024334954
+/works/OL17910458W,Bhagavad Gītā,Antonio T. De Nicolas,yoga_philosophy,1,0.33701798,-0.051079713
+/works/OL23534838W,Bhagavad Gītā,Purohit Swami,yoga_philosophy,1,0.38704517,-0.06182022
+/works/OL16477878W,The Bhagavad-gita,Barbara Stoler Miller,yoga_philosophy,1,0.2658489,-0.091262124
+/works/OL5800799W,Illuminations from the Bhagavad-gĩtã,"Kim Murray, Kim Waters, Chris Murray",yoga_philosophy,1,0.28969038,-0.081787966
+/works/OL9866296W,Bhagavad Gita,Anonymous,yoga_philosophy,1,0.38132423,-0.09319615
+/works/OL8006716W,The Bhagavad-Gita,Barbara Stoler Miller,yoga_philosophy,1,0.22482644,-0.05422451
+/works/OL275864W,Bhagavad Gita,Graham M. Schweig,yoga_philosophy,1,0.28899547,-0.08880506
+/works/OL10420707W,Introduction to Bhagavad-gita,A. C. Bhaktivedanta Swami Srila Prabhupada,yoga_philosophy,1,0.5138701,-0.02556921
+/works/OL339332W,Perennial psychology of the Bhagavad Gita,Rama Swami,yoga_philosophy,1,0.4537098,0.10208544
+/works/OL3759540W,The Inner Tradition of Yoga,Michael Stone,yoga_philosophy,1,0.5446598,0.09224123
+/works/OL58150W,The Yoga Tradition,Georg Feuerstein,yoga_philosophy,1,0.57721895,-0.0023522563
+/works/OL21279129W,"Sūtras, Stories and Yoga Philosophy",Daniel Raveh,yoga_philosophy,1,0.5040786,-0.032525703
+/works/OL25772439W,Introduction to Yoga Philosophy,"Ashok Kumar Malhotra, Patañjali",yoga_philosophy,1,0.5995004,0.09829899
+/works/OL20773569W,The Eight Limbs of Yoga,"Stuart Ray Sarbacker, Kevin Kimple, Christopher Key Chapple",yoga_philosophy,1,0.51994044,0.10446004
+/works/OL28472862W,Higher Psychical Development (Yoga Philosophy) an Outline of the Secret Hindu Teachings,Hereward Carrington,yoga_philosophy,1,0.46571842,0.054984126
+/works/OL34094431W,Yoga Philosophy,"Swami Vivekananda, Patañjali",yoga_philosophy,1,0.50217324,0.10464021
+/works/OL10225314W,Introduction to the Yoga Philosophy,Rai Bahadur Srisa Chandra Vasu,yoga_philosophy,1,0.6444257,0.05737824
+/works/OL29029944W,Yoga Philosophy and Practice,Shyam Mehta,yoga_philosophy,1,0.634834,0.1477177
+/works/OL24507305W,A Treatise on the Yoga Philosophy,N C Paul,yoga_philosophy,1,0.4386987,0.105732374
+/works/OL24386321W,A Treatise On The Yoga Philosophy / By N.c. Paul,N. C. Paul,yoga_philosophy,1,0.4633375,0.12777102
+/works/OL24460802W,Yoga Sastra : The Yoga Sutras of Patenjali Examined,"John Murdoch, Patañjali Patañjali",yoga_philosophy,1,0.5470104,0.016783103
+/works/OL1067513W,Yoga philosophy in relation to other systems of Indian thought,"Dasgupta, Surendranath",yoga_philosophy,1,0.46776506,0.0034891157
+/works/OL25312705W,Yoga Philosophy,N. C. Paul,yoga_philosophy,1,0.54147667,0.22761086
+/works/OL26428003W,Exploring Yoga Philosophy,"Yogachariya Jnandev Giri, Yogacharini Deepika Saini",yoga_philosophy,1,0.5825131,0.08542481
+/works/OL37640717W,Die Yoga-Philosophie Nach Dem Râjmârtanda,Paul Markus,yoga_philosophy,1,0.43387908,0.10156599
+/works/OL21891106W,Yoga Philosophy,Mentes LIBRES,yoga_philosophy,1,0.54204136,0.18234918
+/works/OL29512527W,Eight Limbs of Yoga,Jack Utermoehl,yoga_way_of_life,1,0.51081055,0.07680951
+/works/OL25483265W,Eight Limbs of Yoga,Sagar Raghvani,yoga_way_of_life,1,0.5295159,0.16033077
+/works/OL27937591W,Fallen Star,Molly Chanson,yoga_way_of_life,1,0.5201793,0.11793565
+/works/OL38276407W,Yoga Through Christ,"Sally Bassett Ph D, Tricia Wright",yoga_way_of_life,1,0.6294255,0.18478544
+/works/OL36285390W,Rethinking Alcohol Through the Eight Limbs of Yoga,Elizabeth Ross Hubbell,yoga_way_of_life,1,0.44614246,0.09942672
+/works/OL36281408W,Eight Limbs of Yoga : a Holistic Guide for Daily Living,Anjelica Mahana,yoga_way_of_life,1,0.5169422,0.047249384
+/works/OL36294251W,Exploring the Eight Limbs of Yoga : a Guide to the Spiritual Practice of Yoga,Jamie Heagany,yoga_way_of_life,1,0.5244804,0.06471518
+/works/OL20250314W,Marine on the Mat,Rishi Eric Infanti,yoga_way_of_life,1,0.48054397,0.08127103
+/works/OL40261955W,Eight Limbs of Yoga - the Structure and Pacing of Self-Directed Spiritual Practice (Arabic Translation),Yogani,yoga_way_of_life,1,0.5487769,0.031140834
+/works/OL39765165W,Eight Limbs of Yoga - the Structure and Pacing of Self-Directed Spiritual Practice : (AYP Enlightenment Series),Yogani,yoga_way_of_life,1,0.53242606,0.0731154
+/works/OL19737014W,The yoga mind,Rina Jakubowicz,yoga_way_of_life,1,0.5745121,0.18765345
+/works/OL19998508W,Do your om thing,Rebecca Pacheco,yoga_way_of_life,1,0.5226679,0.13409354
+/works/OL27367982W,Sacred Kink,Lee Harrington,yoga_way_of_life,1,0.21958037,0.07721822
+/works/OL3018485W,Light on prāṇāyāma,B. K. S. Iyengar,yoga_way_of_life,1,0.5797722,0.07454538
+/works/OL21914503W,Pranayama Yoga,Alain Jacques BOUGEAREL,yoga_way_of_life,1,0.4148433,-0.004655193
+/works/OL21957839W,Pranayama Yoga,Alain BOUGEAREL,yoga_way_of_life,1,0.42687732,-0.031610962
+/works/OL40420413W,Pranayama Yoga Asana,Anand Gupta,yoga_way_of_life,1,0.47561675,0.1562833
+/works/OL3220436W,"Prana, Pranayama, Prana Vidya",Niranjanananda,yoga_way_of_life,1,0.45738313,0.009523393
+/works/OL25528681W,Art du Souffle,Alain BOUGEAREL,yoga_way_of_life,1,0.42012897,-0.04573715
+/works/OL36317028W,Pranayama Ayurvedic Breathing Exercises : Mental Benefits of Practicing Breath Control,Lorretta Thiemann,yoga_way_of_life,1,0.4781568,0.025739308
+/works/OL5712958W,Breathing life,Coudoux Yogi.,yoga_way_of_life,1,0.4491508,0.13031779
+/works/OL6227388W,Kumbhaka paddhati of Raghuvira,"Raghuvīra Audīcya., M.L. Gharote, Devnath Parimal, B. K. S. Iyengar",yoga_way_of_life,1,0.531913,0.018652154
+/works/OL5740460W,The Yoga of Breath,Richard Rosen,yoga_way_of_life,1,0.51664215,0.118911505
+/works/OL35746198W,5 S of Yoga,Newbee Publication,yoga_way_of_life,1,0.5013255,0.17392354
+/works/OL16945960W,Prana and pranayama,Niranjanananda Paramahansa,yoga_way_of_life,1,0.56060934,0.07937466
+/works/OL18667517W,Teaching yoga,Mark Stephens,yoga_way_of_life,1,0.62887716,0.09413115
+/works/OL5740458W,Pranayama Beyond the Fundamentals,Richard Rosen,yoga_way_of_life,1,0.5012213,0.11815504
+/works/OL4094212W,Journey of awakening,"Ram Dass., Ram Dass",yoga_way_of_life,1,0.4488027,0.044993587
+/works/OL41831556W,Breathe. Live. Be : Journal Blank Lined 6X9 Yoga Meditation,Yoga Meditation Yoga Meditation Journals,yoga_way_of_life,1,0.43252534,0.14242773
+/works/OL30334571W,Meditation Yoga Coloring Book,Creative Publishing Press,yoga_way_of_life,1,0.39454687,0.09668959
+/works/OL29554847W,Adult Creative Coloring Mandalas,"Meditation Yoga, Suu design",yoga_way_of_life,1,0.32382342,-0.008553138
+/works/OL20747704W,Mindful Pregnancy,,yoga_way_of_life,1,0.34750044,0.13806918
+/works/OL7957464W,Yoga Nidra,Richard Miller,yoga_way_of_life,1,0.5735558,0.11200332
+/works/OL29824964W,Power of Meditative Yoga,Shawn Tham,yoga_way_of_life,1,0.5468579,0.15007845
+/works/OL30425314W,Meditation Yoga Coloring Book for Adults,Creative Publishing Press,yoga_way_of_life,1,0.4032104,0.11024174
+/works/OL30425316W,Meditation Yoga Coloring Book for Children,Creative Publishing Press,yoga_way_of_life,1,0.38126984,0.09336329
+/works/OL30355084W,Meditation Yoga Coloring Book,Printopia Press,yoga_way_of_life,1,0.3726645,0.074627444
+/works/OL29766447W,New Dimensions of Meditation-Yoga,"NAGARATH, Manoj SRIVASTAVA",yoga_way_of_life,1,0.54606074,0.1482682
+/works/OL30427261W,Meditation Yoga Coloring Book,Print Point Press,yoga_way_of_life,1,0.40615278,0.089663595
+/works/OL30529446W,"Kinder Bewegen - Tanz, Meditation, Yoga",Susan Kramer,yoga_way_of_life,1,0.3920136,0.050570548
+/works/OL16442230W,The mindful way through pregnancy,Susan Piver,yoga_way_of_life,1,0.30654424,0.064441755
+/works/OL30839201W,Meditation Yoga Coloring Book,Amar Publishing,yoga_way_of_life,1,0.45533434,0.04433289
+/works/OL2680142W,The way of the superior man,David Deida,yoga_way_of_life,0,0.009645022,0.088910975
+/works/OL2737634W,Yoga for Sex,Vimla Lalvani,yoga_way_of_life,1,0.5513871,0.0006357436
+/works/OL7108543W,Yoga,Ronald Hutchinson,yoga_way_of_life,1,0.50469005,0.11546016
+/works/OL528081W,The yoga of Jesus,Yogananda Paramahansa,yoga_way_of_life,1,0.6112397,0.031800628
+/works/OL122942W,The hidden teaching beyond yoga,Paul Brunton,yoga_way_of_life,1,0.38116443,0.12568709
+/works/OL8469761W,Jnana-yoga,Ramakrishna Puligandla,yoga_way_of_life,1,0.39895228,0.01891379
+/works/OL27937428W,Decolonizing Yoga : from Critical to Cosmic Consciousness,Punam Mehta,yoga_way_of_life,1,0.33444428,0.1223657
+/works/OL20039361W,101 ways to live well,Victoria Joy,yoga_way_of_life,1,0.40963098,0.14797914
+/works/OL27669575W,Integral Yoga,Chandan Sukumar Sengupta,yoga_way_of_life,1,0.60315365,0.07288279
+/works/OL318749W,How to practice,His Holiness Tenzin Gyatso the XIV Dalai Lama,yoga_way_of_life,1,0.31985575,-0.011044818
+/works/OL514170W,The complete yoga of emotional-sexual life,Adi Da Samraj,yoga_way_of_life,1,0.42257518,0.10826771
+/works/OL3931218W,The Way of Aikido,George Burr Leonard,yoga_way_of_life,1,0.20398897,-0.03381439
+/works/OL15792352W,Don't sweat the small stuff-- and it's all small stuff,Richard Carlson,yoga_way_of_life,1,0.22252937,0.17610465
+/works/OL41350727W,Yoga : a Way of Life,Sara Price,yoga_way_of_life,1,0.61007166,0.15393841
+/works/OL35899753W,YOGA for Behaviour Change,Prathapan P,yoga_way_of_life,1,0.5223622,0.02327166
+/works/OL8912556W,The Spiritual Quest And the Way of Yoga,Swami Adiswarananda,yoga_way_of_life,1,0.5435073,0.17287861
+/works/OL35955846W,Doing Yoga : a Great Way to Your Life to Gain Effect of a Yoga Practice,Lorita Mcilrath,yoga_way_of_life,1,0.58399856,0.12164155
+/works/OL30996373W,Yoga Philosophy : 50+ Essential Principles to Deepen Your Yoga Practice and Discover a Meaningful Way of Life,Elicia Olrich,yoga_way_of_life,1,0.46844506,0.19161822
+/works/OL20343262W,Yoga : A Natural Way of being,Dr. Vinod Verma,yoga_way_of_life,1,0.63556767,0.14005303
+/works/OL26122839W,Reiki Is A Way Of Life,Reiki Publishing,yoga_way_of_life,1,0.106111,0.0910262
+/works/OL5347024W,"Vedas, a way of life from yadnya (sacrifice) to yoga (union)",Gaṅgeśvarānanda Swami.,yoga_way_of_life,1,0.4436566,-0.022747388
+/works/OL2695110W,Ayurveda,Vasant Lad,ayurveda_indian_spirituality,1,0.36347646,0.0466805
+/works/OL1825922W,Numerology,Harish Johari,ayurveda_indian_spirituality,1,0.23230383,-0.068308175
+/works/OL19725658W,Secrets of ayurveda,Gopi Warrier,ayurveda_indian_spirituality,1,0.46540818,0.082598634
+/works/OL555603W,Ayurveda and the mind,David Frawley,ayurveda_indian_spirituality,1,0.34931082,0.068545826
+/works/OL2747815W,Practical ayurveda,Atreya.,ayurveda_indian_spirituality,1,0.3805012,0.031232795
+/works/OL3001669W,Ayurveda,Maya Tiwari,ayurveda_indian_spirituality,1,0.26397148,-0.05984775
+/works/OL2695104W,Textbook of Ayurveda,Vasant Lad,ayurveda_indian_spirituality,1,0.34699953,0.06631324
+/works/OL2658683W,The complete illustrated guide to Ayurveda,Gopi Warrier,ayurveda_indian_spirituality,1,0.36975792,-0.003945213
+/works/OL2695109W,Marma points of Ayurveda,Vasant Lad,ayurveda_indian_spirituality,1,0.49826002,0.02157687
+/works/OL2632016W,Ayurveda,Vinod Verma,ayurveda_indian_spirituality,1,0.36392942,-0.0005600236
+/works/OL3372095W,Ayurveda and Panchakarma,Sunil V. Joshi,ayurveda_indian_spirituality,1,0.47280335,0.116108395
+/works/OL15841607W,Ayurveda & immortality,Scott Treadway,ayurveda_indian_spirituality,1,0.46633723,0.06137101
+/works/OL5872662W,Human physiology in Ayurveda,Kishor Patwardhan,ayurveda_indian_spirituality,1,0.2620861,0.051949777
+/works/OL2775138W,The Ayurveda encyclopedia,Sada Shiva Tirtha,ayurveda_indian_spirituality,1,0.43766037,-0.043601993
+/works/OL2622964W,Absolute beauty,Pratima Raichur,ayurveda_indian_spirituality,1,0.26942232,-0.085481286
+/works/OL555612W,Yoga and Ayurveda,David Frawley,ayurveda_indian_spirituality,1,0.534998,0.0918911
+/works/OL3946347W,Ayurveda,Scott Gerson,ayurveda_indian_spirituality,1,0.25172377,-0.018618666
+/works/OL2571649W,The book of ayurveda,Judith H. Morrison,ayurveda_indian_spirituality,1,0.33971786,0.13407466
+/works/OL23743700W,Secrets of ayurveda,"Gopi Warrier, Dr. Harish Verma, Karen Sullivan",ayurveda_indian_spirituality,1,0.4205744,0.030631771
+/works/OL3007509W,Ayurveda & aromatherapy,Light Miller,ayurveda_indian_spirituality,1,0.29963762,0.021539401
+/works/OL3372096W,Ayurveda & life impressions bodywork,Donald VanHowten,ayurveda_indian_spirituality,1,0.3811705,0.12582451
+/works/OL14871980W,Soldier of the Mist,Gene Wolfe,ayurveda_indian_spirituality,0,0.05003779,0.028571319
+/works/OL9094887W,Vedanta Treatise The Eternities,A.Parthasarathy,ayurveda_indian_spirituality,1,0.20955656,0.110819206
+/works/OL323969W,Vedāntasārah̤,"Sadānanda Yogīndra, George Adolphus Jacob, Nandalal Dhole",ayurveda_indian_spirituality,1,0.16048934,-0.06567539
+/works/OL311904W,Practical Vedanta,Swami Vivekananda,ayurveda_indian_spirituality,1,0.34259987,0.15117235
+/works/OL2972003W,Yoga mind & body,"Sivananda Yoga Vedanta Centre (London, England), Sivananda Yoga Vedanta Centre, Sivananda Yoga Vedanta Center",ayurveda_indian_spirituality,1,0.50269264,0.08435321
+/works/OL3262223W,Vedanta & Christian faith,Bede Griffiths,ayurveda_indian_spirituality,1,0.1531615,-0.017072046
+/works/OL311921W,Vedanta philosophy,Swami Vivekananda,ayurveda_indian_spirituality,1,0.30864647,0.16008796
+/works/OL153287W,The sermon on the Mount according to Vedanta,"Prabhavananda Swāmi, Swami Prabhavananda, Prabhavananda",ayurveda_indian_spirituality,1,0.36237347,0.06490598
+/works/OL310463W,Vedanta philosophy,F. Max Müller,ayurveda_indian_spirituality,1,0.08289753,0.065701164
+/works/OL6895449W,The universe of Vedanta,Bani Deshpande,ayurveda_indian_spirituality,1,0.1589038,0.08313033
+/works/OL97969W,Vedanta,Pravrajika Vrajaprana,ayurveda_indian_spirituality,1,0.31183845,0.025697924
+/works/OL18019340W,Yoga mind & body,Sivananda Yoga Vedanta Centre,ayurveda_indian_spirituality,1,0.6063492,0.14508255
+/works/OL40132865W,Vedanta Philosophy,Swami Abhedananda,ayurveda_indian_spirituality,1,0.32525656,0.148178
+/works/OL8398740W,Vedanta,Hans Torwestern,ayurveda_indian_spirituality,1,0.27167198,0.05108473
+/works/OL250970W,Vedanta Philosophy,Abhedananda Swami,ayurveda_indian_spirituality,0,0.091128185,0.18656331
+/works/OL8303868W,Standing Ground,Thomas Buckley,ayurveda_indian_spirituality,0,0.05123433,-0.0034996807
+/works/OL27804231W,Global Perspectives on Indian Spirituality and Management,"Sanjoy Mukherjee, László Zsolnai",ayurveda_indian_spirituality,1,0.19373968,0.05121457
+/works/OL15975100W,American Veda,Philip Goldberg,ayurveda_indian_spirituality,1,0.25958043,-0.07924289
+/works/OL28357247W,Icons of Grace,Nityanand Charan Das,ayurveda_indian_spirituality,1,0.23259789,0.053218752
+/works/OL32465699W,Upanishads,Eknath Easwaran,ayurveda_indian_spirituality,1,0.2661039,0.073121525
+/works/OL23955829W,Indian spirituality,Augustine Thottakara,ayurveda_indian_spirituality,1,0.20593558,-0.049973205
+/works/OL33616728W,Indian spirituality in action,Vandana Sister,ayurveda_indian_spirituality,1,0.24257095,-0.09408754
+/works/OL30836928W,Learn Indian Spiritual Lessons,M. Muzamal NAVEED,ayurveda_indian_spirituality,1,0.42683765,0.03435538
+/works/OL37572741W,Indian Spirituality,Joshua R. Paszkiewicz,ayurveda_indian_spirituality,1,0.24251519,-0.05567393
+/works/OL5858315W,Wisdom,"Danielle Föllmi, Danielle Föllmi, Olivier FÖllmi",ayurveda_indian_spirituality,1,0.28930035,0.046309453
+/works/OL31573362W,"A study of Ādhyātmik Sādhan, a modern Indian spiritual manual",Naomi Lilian Aschner,ayurveda_indian_spirituality,1,0.35260716,-0.023730135
+/works/OL528094W,Autobiography of a Yogi,Yogananda Paramahansa,ayurveda_indian_spirituality,1,0.38977772,-0.0792577
+/works/OL27024280W,An Autobiography of a Yogi,Paramhansa Yogananda,ayurveda_indian_spirituality,1,0.24888173,-0.043384496
+/works/OL26624001W,Autobiography of a Yogi by Paramhansa Yogananda Illustrated Edition,Paramhansa Yogananda,ayurveda_indian_spirituality,1,0.4511512,0.025237631
+/works/OL31382528W,Autobiography of a Yogi,Yogananda Paramahamsa,ayurveda_indian_spirituality,1,0.45097122,-0.04130482
+/works/OL30486087W,Autobiography of a Yogi,Pramahansa Yogananda,ayurveda_indian_spirituality,1,0.3975549,0.0970456
+/works/OL37608649W,Autobiography of a YOGI,Paramahansa Yogananda,ayurveda_indian_spirituality,1,0.53686,0.006474104
+/works/OL27162691W,Autobiography of a Yogi Illustrated,Paramhansa Yogananda,ayurveda_indian_spirituality,1,0.43391147,0.021339756
+/works/OL27248532W,Autobiography of a Yogi:(illustrated Edition),Paramhansa Yogananda,ayurveda_indian_spirituality,1,0.42928335,0.023743475
+/works/OL40685632W,Autobiography of a Yogi,"Paramahansa Paramahansa Yogananda, Adriano Lucchese, W. Evans-Wentz",ayurveda_indian_spirituality,1,0.4488556,0.035592068
+/works/OL34318340W,Autobiography of a Yogi,PARAMAHANSA YOGANADA,ayurveda_indian_spirituality,1,0.3467902,-0.087801196
+/works/OL38298080W,Autobiography of a Yogi,"P. Yogananda, W. Y. Evans-Wentz",ayurveda_indian_spirituality,1,0.46188262,0.037540182
+/works/OL40419205W,Autobiography of a YOGI,ParamhansaParamhansa Yogananda,ayurveda_indian_spirituality,1,0.55184513,0.056157857
+/works/OL41604484W,Autobiography of a Yogi,Paramhansa Paramhansa Yogananda,ayurveda_indian_spirituality,1,0.3890521,-0.005348597
+/works/OL32399868W,Autobiography of a Yogi,Yogananda,ayurveda_indian_spirituality,1,0.48319948,-0.072801396
+/works/OL42994534W,autobiography of a yogi,paramahansa yogananda,ayurveda_indian_spirituality,1,0.42841664,0.031061053
+/works/OL43028026W,autobiography of a yogi,paramhansa yogananda,ayurveda_indian_spirituality,1,0.3833437,0.0020940856
+/works/OL19505608W,The Great book of Tantra,Indra Sinha,ayurveda_indian_spirituality,1,0.17578469,-0.11154428
+/works/OL224169W,Tantra,Prem Saran,ayurveda_indian_spirituality,1,0.17758308,-0.12707861
+/works/OL4317075W,Journey into consciousness,"Charles Breaux, C. BREAUX",ayurveda_indian_spirituality,1,0.34336168,0.054540906
+/works/OL9081981W,History of Indian Literature,Maurice Winternitz,ayurveda_indian_spirituality,1,0.10324623,-0.16878471
+/works/OL13436603W,Tantra,Bernard Soulié,ayurveda_indian_spirituality,2,0.09665426,-0.15055554
+/works/OL17433534W,Tantra The Indian Cult Of Ecstasy,Philip S. Rawson,ayurveda_indian_spirituality,1,0.14834157,-0.1667676
+/works/OL9083402W,Encyclopaedia of Tantra,"Sadhu Santideva, SADHU SANTIDEV",ayurveda_indian_spirituality,1,0.12401386,-0.09901406
+/works/OL23365509W,"Tantra, mantra, and yantra in Indian tradition","Seminar on Tantra, Mantra & Yantra in Indian Tradition (2009 Hyderabad, India)",ayurveda_indian_spirituality,1,0.23029877,-0.16841632
+/works/OL21262486W,"Sir John Woodroffe, Tantra and Bengal",Kathleen Taylor,ayurveda_indian_spirituality,2,0.074795984,-0.13403058
+/works/OL5728378W,The Great Book of Tantra,Indra Sinha,ayurveda_indian_spirituality,1,0.23927209,-0.11112487
+/works/OL5838483W,The dawn of Indian music in the West,Peter Lavezzoli,ayurveda_indian_spirituality,2,0.054577343,-0.24362756
+/works/OL3284970W,Tantra : the Indian cult of ecstasy,Philip S. Rawson,ayurveda_indian_spirituality,1,0.17651124,-0.18999092
+/works/OL22897199W,The Niśvāsatattvasaṃhitā,"Dominic Goodall, Alexis Sanderson, H. Isaacson",ayurveda_indian_spirituality,2,0.08577161,-0.25002354
+/works/OL63384W,Geschichte der indischen litteratur,Moritz Winternitz,ayurveda_indian_spirituality,1,0.06314816,-0.05060986
+/works/OL23891931W,The Tantras and their impact on Indian life,Pushpendra Kumar,ayurveda_indian_spirituality,2,0.06796098,-0.15338445
+/works/OL18554528W,An Ancient Indian system of rasayana,"Chittabrata Palit, Nupur Dasgupta",ayurveda_indian_spirituality,1,0.2520365,-0.24107729
+/works/OL355378W,Sanskrit manuscripts from Tibet,Lokesh Chandra,ayurveda_indian_spirituality,1,0.30906957,-0.16269045
+/works/OL8418434W,Traditional Ecological Knowledge and Natural Resource Management,Charles R. Menzies,indigenous_knowledge_americas,0,-0.32234037,0.19301265
+/works/OL20591920W,Traditional Ecological Knowledge,Melissa K. Nelson,indigenous_knowledge_americas,0,-0.2847422,0.21484444
+/works/OL19106341W,Traditional ecological knowledge,"Julian Inglis, International Development Research Centre (Canada)",indigenous_knowledge_americas,0,-0.28926122,0.26609233
+/works/OL28797527W,Traditional Ecological Knowledge and Global Pandemics,Ngozi Finette Unuigbe,indigenous_knowledge_americas,0,-0.23087646,0.20466124
+/works/OL20673440W,The Traditional Ecological Knowledge of the Solega,Aung Si,indigenous_knowledge_americas,0,-0.11439405,0.033547543
+/works/OL37858406W,"Traditional Ecological Knowledge , Ethnoecology, It's Use in Indigenous Communities and Native America","Tyler Pounds, New Mexico State University Writing Center",indigenous_knowledge_americas,0,-0.30239537,0.025333554
+/works/OL9281158W,Traditional Ecological Knowledge,Robert Earle Johannes,indigenous_knowledge_americas,0,-0.30050164,0.28081465
+/works/OL18524786W,Traditional ecological knowledge,"Nancy M. Williams, Graham B. K. Baines",indigenous_knowledge_americas,0,-0.340615,0.21726619
+/works/OL18952036W,Human impacts on Amazonia,"Darrell A. Posey, Michael J. Balick",indigenous_knowledge_americas,0,-0.3636143,0.09430472
+/works/OL28799988W,Traditional Ecological Knowledge of Resource Management in Asia,"Suresh Chand Rai, Prabuddh Kumar Mishra",indigenous_knowledge_americas,0,-0.13077316,0.16569014
+/works/OL25762896W,Traditional Ecological Knowledge in Georgia,Zaal Kikvize,indigenous_knowledge_americas,0,-0.22543786,0.13152395
+/works/OL21570727W,Traditional Ecological Knowledge,Jerome M. Harrington,indigenous_knowledge_americas,0,-0.24172126,0.23649259
+/works/OL18727498W,Traditional ecological knowledge of mountain people,"Neelendra K. Joshi, Vir Singh",indigenous_knowledge_americas,0,-0.012071865,0.19199526
+/works/OL25768041W,Traditional Ecological Knowledge and Global Pandemics,Ngozi F. Unuigbe,indigenous_knowledge_americas,0,-0.17758812,0.12852414
+/works/OL18999427W,Traditional ecological knowledge and modern environmental assessment,"Peter Boothroyd, Barry Sadler",indigenous_knowledge_americas,0,-0.35489047,0.24203858
+/works/OL42412368W,Indigenous Critical Reflections on Traditional Ecological Knowledge,Lara A. Jacobs,indigenous_knowledge_americas,0,-0.3114067,0.03891627
+/works/OL18590809W,Traditional ecological knowledge camp in Fort Yukon,Brandy L. Berkbigler,indigenous_knowledge_americas,0,-0.1456897,0.1720253
+/works/OL23189415W,The Navajo and the animal people,Steve Pavlik,indigenous_knowledge_americas,0,-0.116060056,0.04054125
+/works/OL5774881W,Traditional ecological knowledge of salmon along the Yukon River,Catherine F. Moncrieff,indigenous_knowledge_americas,0,-0.18149798,0.18574052
+/works/OL23140387W,Exploring the role of traditional ecological knowledge in climate change initiatives,Kirsten Vinyeta,indigenous_knowledge_americas,0,-0.27528524,0.18148853
+/works/OL39660017W,Exploring the role of traditional ecological knowledge in climate change initiative,Kirsten Vinyeta,indigenous_knowledge_americas,0,-0.2725898,0.17414081
+/works/OL24082461W,Whitefish,Susan Georgette,indigenous_knowledge_americas,0,-0.19004552,0.050746813
+/works/OL19533427W,Voices from the bay,,indigenous_knowledge_americas,0,-0.38761356,0.13317122
+/works/OL16819897W,Braiding Sweetgrass,Robin Wall Kimmerer,indigenous_knowledge_americas,0,-0.06279416,0.21605492
+/works/OL15046728W,"Indigenous knowledge, ecology, and evolutionary biology",Raymond John Pierotti,indigenous_knowledge_americas,0,-0.28360286,0.09440789
+/works/OL11962485W,The world Wolf made,Raymond John Pierotti,indigenous_knowledge_americas,0,-0.2741755,0.0937657
+/works/OL17438481W,Ancient Pathways Ancestral Knowledge Ethnobotany And Ecological Wisdom Of Indigenous Peoples Of Northwestern North America,Nancy J. Turner,indigenous_knowledge_americas,0,-0.22860232,-0.015753666
+/works/OL1054919W,Biopiracy,Vandana Shiva,indigenous_knowledge_americas,0,-0.2206125,0.10379678
+/works/OL37882395W,Natural Science and Indigenous Knowledge,"Edward A. (Ecology Professor) Johnson, Susan M. Arlidge",indigenous_knowledge_americas,0,-0.33391798,0.105186984
+/works/OL18208113W,Indigenous religions,Graham Harvey,indigenous_knowledge_americas,0,-0.09206443,-0.05443203
+/works/OL18348075W,"Science, colonialism, and indigenous peoples",Laurelyn Whitt,indigenous_knowledge_americas,0,-0.26122785,-0.07194978
+/works/OL28701732W,African Indigenous Ecological Knowledge Systems,Ikechukwu Anthony Kanu,indigenous_knowledge_americas,0,-0.19097924,0.22848184
+/works/OL15318695W,Protecting Indigenous Knowledge and Heritage,James Youngblood Henderson,indigenous_knowledge_americas,0,-0.27902308,-0.07265427
+/works/OL19588689W,Participating in development,"Paul Sillitoe, Alan Bicker, Johan Pottier",indigenous_knowledge_americas,0,-0.27311486,0.0652089
+/works/OL6082026W,Global Biopiracy,Ikechi Mgbeoji,indigenous_knowledge_americas,0,-0.18899606,0.08193996
+/works/OL18409453W,Indigenous traditions and ecology,John Grim,indigenous_knowledge_americas,0,-0.38231447,0.059022587
+/works/OL8834940W,Red alert!,Daniel R. Wildcat,indigenous_knowledge_americas,0,-0.20751904,0.23725675
+/works/OL15297674W,Indigenous Peoples Wisdom and Power,"Julian Kunnie, Nomalungelo L. Goduka",indigenous_knowledge_americas,0,-0.084230654,-0.045645077
+/works/OL25333740W,Indigenous Intergenerational Resilience,Lewis Williams,indigenous_knowledge_americas,0,-0.29683104,-0.009636245
+/works/OL11893544W,Indigenous knowledge systems and sustainable development,"International Conference on Indigenous Knowledge Systems (IKS) in Africa and Their Relevance to Sustainable Development (2005 Human Ecology Dept., Vrije Universiteit Brussel)",indigenous_knowledge_americas,0,-0.24725148,0.16778776
+/works/OL21697318W,Routledge Handbook of Indigenous Environmental Knowledge,"Thomas F. Thornton, Shonil A. Bhagwat",indigenous_knowledge_americas,0,-0.32905123,0.14714773
+/works/OL19507904W,Indigenous heritage and intellectual property,Silke von Lewinski,indigenous_knowledge_americas,0,-0.26425517,-0.068550915
+/works/OL22535388W,Indigenous Knowledge for Climate Change Assessment and Adaptation,"Douglas Nakashima, Igor Krupnik, Jennifer T. Rubis",indigenous_knowledge_americas,0,-0.28260383,0.09911908
+/works/OL21069404W,"Intellectual Property, Indigenous People and Their Knowledge",Peter Drahos,indigenous_knowledge_americas,0,-0.21168886,-0.077139445
+/works/OL18234246W,Voices from the forest,Malcolm Cairns,indigenous_knowledge_americas,0,-0.19413292,0.1991289
+/works/OL16135862W,Ben tu sheng tai zhi shi yin lun =,Tingshuo Yang,indigenous_knowledge_americas,0,-0.021718986,-0.023127671
+/works/OL28626688W,Socio-Ecological Systems and Decoloniality,"Deepa Pullanikkatil, Kerry Hughes",indigenous_knowledge_americas,0,-0.37214658,0.2097806
+/works/OL18848791W,Sovereign subjects,Aileen Moreton-Robinson,indigenous_knowledge_americas,0,-0.25355086,0.0644062
+/works/OL39130581W,Indigenous Land-Based Knowledge and Sustainability,"Ranjan Datta, Jebunnessa Chapola, John Bosco Acharibasam",indigenous_knowledge_americas,0,-0.3138584,0.13612123
+/works/OL43665945W,Land-based education,Herman Michell,indigenous_knowledge_americas,0,-0.17592572,0.06548856
+/works/OL43871405W,Indigenous food systems,"Priscilla Settee, Shailesh Shukla",indigenous_knowledge_americas,0,-0.22379865,-0.018048199
+/works/OL719656W,The earth's blanket,"Nancy J. Turner, K. Sivaramakrishnan",indigenous_knowledge_americas,0,-0.16710013,0.24927321
+/works/OL44446086W,People of the Himalayas,Kanak Chandra Mahanta,indigenous_knowledge_americas,2,0.0023150963,-0.09412988
+/works/OL32449175W,Tribal's and social inclusion,"Suchismita Mishra, D. C. Nanjunda",indigenous_knowledge_americas,2,-0.025693692,-0.13309821
+/works/OL16938976W,Nile River Basin,Assefa M. Melesse,indigenous_knowledge_americas,0,-0.12722623,0.1720984
+/works/OL19858500W,International encyclopedia of human geography,"N. J. Thrift, Rob Kitchin",indigenous_knowledge_americas,0,-0.2205833,0.16229403
+/works/OL1638964W,Report of the Royal Commission on Aboriginal Peoples,Royal Commission on Aboriginal Peoples (RCAP),indigenous_knowledge_americas,2,-0.20989068,-0.1693297
+/works/OL32061664W,Religion and development in southern and central Africa,"Religion, Citizenship and Development -- Southern African Perspectives (Conference) (2017 Harare, Zimbabwe)",indigenous_knowledge_americas,0,-0.04781003,0.015144708
+/works/OL15712946W,THE MUSLIM DELUSION,Dr. Iqbal Syed Hussain,indigenous_knowledge_americas,1,0.21495986,0.07236718
+/works/OL42823332W,A TOUR OF THE WORLD,"Malik Mansab Khan, Muhammad Rafique Abdul Aziz",indigenous_knowledge_americas,0,-0.02918918,0.008398286
+/works/OL20831606W,Indigenous Environmental Knowledge,John Edington,indigenous_knowledge_americas,0,-0.28590038,0.105491415
+/works/OL8306135W,Indigenous Environmental Knowledge and its Transformations,Roy Ellen,indigenous_knowledge_americas,0,-0.19269115,-0.0072218846
+/works/OL21309421W,Handbook of Indigenous Environmental Knowledge,"Thomas Thornton, Shonil Bhagwat",indigenous_knowledge_americas,0,-0.31412634,0.1472682
+/works/OL19165821W,Indigenous environmental knowledge and its transformations,"R. F. Ellen, Alan Bicker",indigenous_knowledge_americas,0,-0.38480383,0.107355855
+/works/OL13646876W,Aboriginal environmental knowledge,Catherine Laudine,indigenous_knowledge_americas,0,-0.31118998,0.19055079
+/works/OL988274W,Local Science Vs. Global Science,Paul Sillitoe,indigenous_knowledge_americas,0,-0.33562106,0.18074085
+/works/OL2965499W,Twenty lessons in environmental sociology,Kenneth Alan Gould,indigenous_knowledge_americas,0,-0.3670395,0.36198
+/works/OL20714690W,Cultural Studies and Environmentalism,"Deborah J. Tippins, Michael P. Mueller, Michiel van Eijck, Jennifer D Adams",indigenous_knowledge_americas,0,-0.32335708,0.18150489
+/works/OL26769192W,Resilience Through Knowledge Co-Production,"Marie Roué, Douglas Nakashima, Igor Krupnik",indigenous_knowledge_americas,0,-0.20927607,0.1626594
+/works/OL16184481W,Indigenous knowledge and the environment in Africa and North America,"David Malcolm Gordon, Shepard Krech",indigenous_knowledge_americas,0,-0.3418019,0.13339193
+/works/OL8303971W,Tending the Wild,"M. Kat Anderson, Kat Anderson",indigenous_knowledge_americas,0,-0.18868846,-0.0055778897
+/works/OL23104640W,Food and environmental security,International Union of Anthropological and Ethnological Sciences. Congress,indigenous_knowledge_americas,0,-0.25872442,0.13567682
+/works/OL9508543W,The Need for Indigenous Knowledge in Environmental Impact Assessment,Seth Appiah-opoku,indigenous_knowledge_americas,0,-0.3065257,0.20873207
+/works/OL29029156W,Indigenous Knowledge and Development,Elizabeth Anne Olson,indigenous_knowledge_americas,2,-0.27015778,-0.17577747
+/works/OL43556342W,Intellectual property and aboriginal environmental knowledge,"Nancy M. Williams, Northern Territory University. Centre for Indigenous Natural and Cultural Resource Management",indigenous_knowledge_americas,0,-0.30275315,0.13004805
+/works/OL18660535W,"Landscape, process and power",Serena Heckler,indigenous_knowledge_americas,0,-0.28418174,0.08000942
+/works/OL42313799W,The participation of indigenous peoples and the application of their environmental and ecological knowledge in the Arctic environmental protection strategy,Kenneth De La Barre,indigenous_knowledge_americas,0,-0.3080097,0.110781245
+/works/OL17496535W,Cultural Studies And Environmentalism The Confluence Of Ecojustice Placebased Science Education And Indigenous Knowledge Systems,Deborah Tippins,indigenous_knowledge_americas,0,-0.34999192,0.2093433
+/works/OL20867279W,Cultural Hybridity and the Environment,Kirsten Maclean,indigenous_knowledge_americas,0,-0.2849961,0.145571
+/works/OL5866830W,Indigenous knowledge and biodiversity in Asia,"Asian Regional Conference on Indigenous Knowledge and Biodiversity (2003 Hanoi, Vietnam)",indigenous_knowledge_americas,0,-0.21836123,0.08836072
+/works/OL23940390W,Indigenous knowledge for biodiversity and development,National Workshop on Indigenous Knowledge (1996 National Museum of Kenya),indigenous_knowledge_americas,0,-0.24120307,0.0761252
+/works/OL18297560W,Valuing local knowledge,Stephen B. Brush,indigenous_knowledge_americas,0,-0.34762928,0.19888839
+/works/OL21160906W,Aboriginal Biocultural Knowledge in South-Eastern Australia,"Fred Cahir, Clark, Ian D., Philip A. Clarke",indigenous_knowledge_americas,0,-0.3380124,0.15512817
+/works/OL17459567W,Traditional Forestrelated Knowledge Sustaining Communities Ecosystems And Biocultural Diversity,Ronald L. Trosper,indigenous_knowledge_americas,0,-0.32962325,0.10221341
+/works/OL20792654W,Traditional Forest-Related Knowledge,"John A. Parrotta, Ronald L. Trosper",indigenous_knowledge_americas,0,-0.27513143,0.04644721
+/works/OL16012716W,Biocultural diversity and indigenous ways of knowing,Karim-Aly S. Kassam,indigenous_knowledge_americas,0,-0.28967375,0.14980984
+/works/OL16321026W,Bio-cultural diversity conserved by indigenous peoples & local communities-- examples & analysis,,indigenous_knowledge_americas,0,-0.3104249,0.00049863977
+/works/OL22785778W,"Patrimonio biocultural, territorio y soc",Varios,indigenous_knowledge_americas,2,-0.23653787,-0.37570247
+/works/OL22540630W,When Rights Embrace Responsibilities,Giulia Sajeva,indigenous_knowledge_americas,0,-0.31287536,0.066536464
+/works/OL23318008W,"Patrimonio biocultural, saberes y derechos de los pueblos originarios","Saberes Ambientales y Derechos de los Pueblos Originarios"" (1st 2010 Universidad Intercultural de Chiapas) Foro Internacional ""Patrimonio Biocultural",indigenous_knowledge_americas,2,-0.310056,-0.1760933
+/works/OL19371381W,Learning endogenous development,COMPAS (Project),indigenous_knowledge_americas,0,-0.1724225,0.09644444
+/works/OL23317828W,Conocimiento indígena contemporáneo y patrimonio biocultural en la Sierra Juárez de Oaxaca,"Mario Enrique Fuente Carrasco, Faustino Ruiz Aquino, Ciro Aquino Vásquez",indigenous_knowledge_americas,2,-0.32109067,-0.31773645
+/works/OL33275723W,El patrimonio biocultural de los pueblos indígenas de México,Eckart Boege,indigenous_knowledge_americas,2,-0.34764245,-0.19816384
+/works/OL16701800W,Genetic resources and traditional knowledge,"Tania Bubela, E. Richard Gold",indigenous_knowledge_americas,0,-0.2809363,0.015101391
+/works/OL15598593W,Ethno-ornithology,Sonia Tidemann,indigenous_knowledge_americas,0,-0.21405156,0.03170031
+/works/OL18673347W,Biodiversity and the law,Charles R. McManis,indigenous_knowledge_americas,0,-0.35295507,0.16546868
+/works/OL19723617W,The profit of the earth,Courtney Fullilove,indigenous_knowledge_americas,0,-0.20886895,0.18255088
+/works/OL26194344W,Patterns of commoning,"David Bollier, Silke Helfrich",indigenous_knowledge_americas,0,-0.20122063,0.27384686
+/works/OL25588522W,Non-Humans in Amerindian South America,Juan Javier Rivera Andía,indigenous_knowledge_americas,2,-0.21213391,-0.42596933
+/works/OL13640652W,"INTERNATIONAL RELATIONS IN UNCOMMON PLACES: INDIGENEITY, COSMOLOGY, AND THE LIMITS OF INTERNATIONAL..",J. MARSHALL BEIER,indigenous_knowledge_americas,0,-0.1878209,-0.04908071
+/works/OL44855078W,Civiltà indigene d'America,"Grazia Marchianò, Jean-Louis Michon",indigenous_knowledge_americas,2,-0.1422513,-0.32694086
+/works/OL21117991W,"Spirits of Blood, Spirits of Breath",Barbara Alice Mann,indigenous_knowledge_americas,1,0.061323695,-0.036729403
+/works/OL21024124W,International Relations in Uncommon Places,J. Marshall Beier,indigenous_knowledge_americas,0,-0.16602826,-0.07062985
+/works/OL32475479W,Culturas visuales indígenas y las prácticas estéticas en las Américas desde la antigüedad hasta el presente,"Sanja Savkić, Hannah Baader",indigenous_knowledge_americas,2,-0.121119924,-0.2122964
+/works/OL20005082W,A Cree healer and his medicine bundle,David E. Young,indigenous_knowledge_americas,0,0.0066930535,0.050958313
+/works/OL24015886W,La reconnaissance des peuples indigènes entre droit et politique,Françoise Martinat,indigenous_knowledge_americas,2,-0.15688477,-0.23246093
+/works/OL29318968W,Lo humano y lo divino,Falchetti Ana María,indigenous_knowledge_americas,2,-0.17610839,-0.299915
+/works/OL19941922W,Sacred sites,Susan Suntree,indigenous_knowledge_americas,0,-0.0873941,0.03978275
+/works/OL18861146W,"New world, first nations","David Patrick Cahill, Blanca Tovías",indigenous_knowledge_americas,2,-0.2783567,-0.22961806
+/works/OL43605697W,Arte indígena en tiempos del bicentenario,"María Alba Bovisio, Juan Carlos Radovich",indigenous_knowledge_americas,2,-0.11151784,-0.39601094
+/works/OL4458249W,The snake with golden braids,Stephen G. Bunker,indigenous_knowledge_americas,0,-0.18126887,-0.03961203
+/works/OL2572191W,The mystical chorus,Donald Broadribb,indigenous_knowledge_americas,2,0.028045118,-0.103233375
+/works/OL24083165W,Visión indigena,Ramón Nenadich Deglans,indigenous_knowledge_americas,2,-0.025778905,-0.19520074
+/works/OL17577990W,Aymara Indian Perspectives On Development In The Andes,Amy Eisenberg,indigenous_knowledge_americas,2,-0.21697062,-0.18022187
+/works/OL18388478W,Mesoamerica's classic heritage,"David Carrasco, Lindsay Jones, Scott Sessions, Lindsay Jones, Edited by Davíd Carrasco, Davíd Carrasco",indigenous_knowledge_americas,2,-0.28617972,-0.37465262
+/works/OL15895284W,Berkshire Encyclopedia of Sustainability Vol. 1,Willis Jenkins,indigenous_knowledge_americas,0,-0.23794943,0.3160562
+/works/OL5871105W,"Paraíso abierto, jardines cerrados","Encuentro Saberes Indígenas: Cosmología, Ecología y Política (2000 Florianópolis, Santa Catarina, Brazil)",indigenous_knowledge_americas,2,-0.2283064,-0.2533572
+/works/OL11824862W,Encuentro de dos,Rosario Pérez Mendoza,indigenous_knowledge_americas,2,-0.15850152,-0.47612947
+/works/OL16547360W,Inside cultures,William L. Balée,indigenous_knowledge_americas,0,-0.16781782,0.02576365
+/works/OL17012319W,Reclaiming indigenous voice and vision,Marie Battiste,indigenous_knowledge_americas,0,-0.20675665,-0.06280152
+/works/OL18480123W,Paradigm wars,"Jerry Mander, Victoria Tauli-Corpuz",indigenous_knowledge_americas,0,-0.26155663,0.13935669
+/works/OL11604956W,Tecpán Guatemala,"Edward F. Fischer, Edward F. Fischer, Carol Elaine Hendrickson",indigenous_knowledge_americas,2,-0.20199569,-0.2094276
+/works/OL45857562W,YACHAY AMARU,Luis Ochoa Siguencia,indigenous_knowledge_americas,2,-0.065167,-0.32405707
+/works/OL18693130W,Framing the world,Paula Willoquet-Maricondi,indigenous_knowledge_americas,0,-0.17366038,0.12961222
+/works/OL22096106W,Thai folklore,"Sirāphō̜n Thitathān Na Thalāng, Čhulālongkō̜nmahāwitthayālai. Khana ʻAksō̜nrasāt",indigenous_knowledge_americas,1,0.0767714,-0.15255648
+/works/OL45870419W,La joya del Inti,Luis Ochoa Siguencia,indigenous_knowledge_americas,2,-0.1363739,-0.42288104
+/works/OL45870417W,El pacto de la laguna,Luis Ochoa Siguencia,indigenous_knowledge_americas,2,-0.20835799,-0.36354062
+/works/OL45870429W,La miel de los cuatro vientos,Luis Ochoa Siguencia,indigenous_knowledge_americas,2,-0.20794424,-0.46640748
+/works/OL45870422W,Nina y la colada morada,Luis Ochoa Siguencia,indigenous_knowledge_americas,2,-0.103895545,-0.4141891
+/works/OL45870425W,La Leyenda de la Fanesca,Luis Ochoa Siguencia,indigenous_knowledge_americas,2,-0.17781006,-0.4231994
+/works/OL19116426W,Environmental studies,Thomas A. Easton,indigenous_knowledge_americas,0,-0.34909958,0.38615832
+/works/OL22147184W,Indigenous Sacred Natural Sites and Spiritual Governance,John Studley,indigenous_knowledge_americas,0,-0.15144542,-0.06174027
+/works/OL16618131W,Spiritual ecology,Leslie E. Sponsel,indigenous_knowledge_americas,0,-0.014977322,0.34987456
+/works/OL26765996W,Sacred Forests of Asia,"Chris Coggins, Bixia Chen",indigenous_knowledge_americas,0,-0.07379467,0.115263075
+/works/OL15920414W,Indigenous religions,Stephen Hunt,indigenous_knowledge_americas,0,-0.13629334,-0.0785431
+/works/OL15413403W,Exploring the spiritualities of the world religions,Duncan S. Ferguson,indigenous_knowledge_americas,1,0.13201854,0.05137731
+/works/OL16112820W,Down to earth,Clifford C. Cain,indigenous_knowledge_americas,0,-0.08151099,0.3632871
+/works/OL19501347W,Cultural and spiritual values of biodiversity,Darrell A. Posey,indigenous_knowledge_americas,0,-0.20313762,0.12698998
+/works/OL3969856W,Yorro Yorro,"David Mowaljarlai, Jutta Malnic",indigenous_knowledge_americas,0,0.027769493,-0.056222685
+/works/OL15055956W,"Nature, space, and the sacred",European Forum for the Study of Religion and the Environment. Inaugural Conference,indigenous_knowledge_americas,0,-0.1785734,0.3459598
+/works/OL30585610W,Wild Animal Coloring Book,Katty Green,indigenous_knowledge_americas,0,-0.08616304,0.1501804
+/works/OL4455599W,Worship and Wilderness,Lloyd Burton,indigenous_knowledge_americas,0,-0.213322,0.034675255
+/works/OL20543904W,Living religions,"Mary Pat Fisher, Robert Luyster",indigenous_knowledge_americas,1,0.15183702,0.084723115
+/works/OL37910858W,Kinship,"Robin Wall Kimmerer, John Hausdoerffer, Gavin Van Horn, Richard Powers - undifferentiated, David Abram, J. Drew Lanham, Sharon Blackie, Maya Ward, Tiokasin Ghosthorse, Amba J. Sepie, Enrique Salmón, Orrin Williams",indigenous_knowledge_americas,0,-0.22029349,-0.058572553
+/works/OL16681639W,"African traditions in the study of religion, diaspora and gendered societies","Afeosemime U. Adogame, Ezra Chitando, Bolaji Bateye",indigenous_knowledge_americas,0,-0.06790891,-0.08650847
+/works/OL37910853W,Kinship,"Robin Wall Kimmerer, John Hausdoerffer, Gavin Van Horn, Marcelo Gleiser, David Abram, Marcia Bjornerud, Joy Harjo, Richard Powers - undifferentiated, J. Drew Lanham, Sharon Blackie",indigenous_knowledge_americas,0,-0.2459003,-0.058548756
+/works/OL18671362W,Penina uliuli,"Philip Culbertson, Margaret Nelson Agee",indigenous_knowledge_americas,2,0.046200365,-0.08806958
+/works/OL18568641W,Heartsick for country,"Sally Morgan, Blaze Kwaymullina",indigenous_knowledge_americas,0,-0.10943697,-0.05036691
+/works/OL23919508W,"Diversity, culture, and counselling",Honoré France,indigenous_knowledge_americas,0,-0.049507234,-0.06345854
+/works/OL21807287W,Contemporary Issues in African Sciences and Science Education,"Akwasi Asabere-Ameyaw, George J. Sefa Dei, Kolawole Raheem",indigenous_knowledge_americas,0,-0.23753993,0.038736865
+/works/OL21448091W,Aboriginal history,"Kristin Burnett, Geoff Read",indigenous_knowledge_americas,0,-0.23770936,-0.06725983
+/works/OL19117957W,"Ancestors, spirits, and healing in Africa and Asia",Ingo Wulfhorst,indigenous_knowledge_americas,0,0.07645195,0.046959266
+/works/OL16443851W,Exploring the sacred,"Marvic Abarra, Suzanne Galbraith, Leigh Bryant",indigenous_knowledge_americas,0,-0.047460318,0.012679443
+/works/OL18771333W,The strength perspective in social work practice,Dennis Saleebey,indigenous_knowledge_americas,1,0.13868247,0.10581891
+/works/OL16051292W,Meetings with mentors,Soren Gordhamer,indigenous_knowledge_americas,1,0.20033984,0.14226198
+/works/OL17576265W,How Forests Think Toward An Anthropology Beyond The Human,Eduardo Kohn,indigenous_knowledge_americas,0,-0.23966415,0.08159686
+/works/OL21542079W,How Forests Think,Eduardo Kohn,indigenous_knowledge_americas,0,-0.27635154,0.034084324
+/works/OL20060077W,Humans and animals,"Julie Urbanik, Connie L. Johnston",indigenous_knowledge_americas,0,-0.3059938,0.26196235
+/works/OL6033795W,Development and Local Knowledge,Alan Bicker,indigenous_knowledge_americas,0,-0.24891396,0.063254975
+/works/OL3365578W,Biodiversity and Traditional Knowledge,Sarah A. Laird,indigenous_knowledge_americas,0,-0.2614875,0.08935096
+/works/OL18516618W,The Oxford handbook on the United Nations,"Thomas George Weiss, Sam Daws",indigenous_knowledge_americas,0,-0.11601804,0.06384916
+/works/OL19951882W,Kangaroo,Stephen Jackson,indigenous_knowledge_americas,0,-0.32710713,0.17043465
+/works/OL16644512W,Rethinking transitions,"Gaby Oré Aguilar, Felipe Gómez Isa",indigenous_knowledge_americas,2,-0.12474801,-0.12760593
+/works/OL22739778W,Science and stewardship to protect and sustain wilderness values,Mexico) World Wilderness Congress (9th 2009 Meridá,indigenous_knowledge_americas,0,-0.23982367,-0.0047775586
+/works/OL18349092W,Native Americans and the environment,"Michael Eugene Harkin, David Rich Lewis",indigenous_knowledge_americas,0,-0.34439018,0.13349582
+/works/OL18585637W,The diversity of international law,Kalliopi Koufa,indigenous_knowledge_americas,0,-0.09921066,-0.041924246
+/works/OL16094823W,Marble Mountain,Bud Willis,indigenous_knowledge_americas,2,0.0031118358,-0.098710634
+/works/OL20044294W,A Latin American music reader,"Javier F. León, Helena Simonett",indigenous_knowledge_americas,2,-0.15759432,-0.4299304
+/works/OL15452195W,Indigenous and popular thinking in América,Rodolfo Kusch,indigenous_knowledge_americas,2,-0.16596533,-0.26878977
+/works/OL42380924W,Indigenous people and archaeology,University of Calgary. Archaeological Association. Conference,indigenous_knowledge_americas,0,-0.18787955,-0.13789362
+/works/OL17991296W,"Structure, knowledge and representation in the Andes","R. Tom Zuidema, Gary Urton",indigenous_knowledge_americas,2,-0.17512786,-0.2718222
+/works/OL1476594W,A bibliography on the agriculture of the American Indians,Everett Eugene Edwards,indigenous_knowledge_americas,2,-0.26916668,-0.16254832
+/works/OL16964120W,Psychiatrist and traditional healers,"Mario Incayawar, Ronald Wintrob, Lise Bouchard, Goffredo Bartocci",indigenous_knowledge_americas,1,0.16286437,-0.031059721
+/works/OL21119081W,Birthing Justice,"Julia Chinyere Oparah, Alicia D. Bonaparte",indigenous_knowledge_americas,0,-0.06673695,0.0801266
+/works/OL15452484W,Fundamentals of complementary and alternative medicine,Marc S. Micozzi,indigenous_knowledge_americas,1,0.26325166,0.11645135
+/works/OL37766987W,The Book of Yerba Mate,Christine Folch,indigenous_knowledge_americas,2,-0.04571768,-0.13525018
+/works/OL19728371W,Faulkner and history,Faulkner and Yoknapatawpha Conference (41st 2014 University of Mississippi),indigenous_knowledge_americas,0,-0.030972023,-0.06755702
+/works/OL15413682W,Examining social theory,Daniel Ethan Chapman,indigenous_knowledge_americas,0,-0.20290922,0.09337884
+/works/OL15507172W,Examining social theory,Daniel K. Chapman,indigenous_knowledge_americas,0,-0.20172444,0.08229077
+/works/OL2969280W,International HRM,T. H. Jackson,indigenous_knowledge_americas,0,-0.022701414,0.045109816
+/works/OL32320026W,The Routledge companion to media studies and digital humanities,Jentery Sayers,indigenous_knowledge_americas,0,-0.20813765,0.039332993
+/works/OL21051948W,Crossing Cultures,Jaynie Anderson,indigenous_knowledge_americas,0,-0.093315475,-0.04311791
+/works/OL33047461W,Witnesses to history,Lyndel V. Prott,indigenous_knowledge_americas,0,-0.15436962,-0.06422545
+/works/OL19976355W,Indigenous Intellectuals,"Gabriela Ramos, Yanna Yannakakis",indigenous_knowledge_americas,2,-0.21395494,-0.27105302
+/works/OL21878153W,Mining Language,Allison Margaret Bigelow,indigenous_knowledge_americas,0,-0.24928749,-0.054287907
+/works/OL15581338W,Indigenous development in the Andes,Robert Andolina,indigenous_knowledge_americas,2,-0.3041741,-0.2226285
+/works/OL18517319W,Accessing biological resources,Natalie P. Stoianoff,indigenous_knowledge_americas,0,-0.18791893,0.22440484
+/works/OL45854849W,Carachula,Luis Ochoa Siguencia,indigenous_knowledge_americas,2,-0.20432493,-0.51398236
+/works/OL1026426W,Culture and Conservation,"David C. Pitt, Jeffrey A. McNeely",indigenous_knowledge_americas,0,-0.41519466,0.146506
+/works/OL18181985W,Culture and conservation,"Jeffrey A. McNeely, David C. Pitt",indigenous_knowledge_americas,0,-0.41402555,0.13529325
+/works/OL19534357W,Andean cosmologies through time,John Holmes McDowell,indigenous_knowledge_americas,2,-0.16185027,-0.17664276
+/works/OL64880W,At the Crossroads of the Earth and the Sky,Gary Urton,indigenous_knowledge_americas,0,-0.03904702,0.037775636
+/works/OL25763566W,Andean Aesthetics and Anticolonial Resistance,"Omar Rivera, Monika Kirloskar-Steinbach",indigenous_knowledge_americas,2,-0.0931858,-0.33358735
+/works/OL18743140W,Andean awakening,"Jorge Luis Delgado, MaryAnn Male",indigenous_knowledge_americas,2,-0.04569989,-0.32353956
+/works/OL15942612W,Yanantin and masintin in the Andean world,Hillary S. Webb,indigenous_knowledge_americas,0,-0.023196597,0.0058418317
+/works/OL12367440W,Andean textile traditions,Mayer Center Symposium (1st 2001 Denver Art Museum),indigenous_knowledge_americas,2,-0.10680166,-0.26194638
+/works/OL32062522W,Moche,Régulo G. Franco Jordán,indigenous_knowledge_americas,2,-0.14566685,-0.3509802
+/works/OL15414061W,Handbook to life in the Inca World,Ananda Cohen Suarez,indigenous_knowledge_americas,2,-0.102058835,-0.26536676
+/works/OL15444168W,Handbook to life in the ancient Inca world,Ananda Cohen Suarez,indigenous_knowledge_americas,2,-0.088349044,-0.26593828
+/works/OL22313704W,Skyscapes,"Fabio Silva, Nicholas Campion",indigenous_knowledge_americas,0,-0.15379255,-0.010865987
+/works/OL16978997W,Pre-Columbian landscapes of creation and origin,John E. Staller,indigenous_knowledge_americas,2,-0.2644049,-0.21084116
+/works/OL18739211W,The occult life of things,Fernando Santos-Granero,indigenous_knowledge_americas,0,-0.19498724,-0.10334786
+/works/OL19123307W,Beyond the visible and the material,Peter Rivière,indigenous_knowledge_americas,0,-0.27603513,-0.04584549
+/works/OL20748330W,"Amerindian Socio-Cosmologies Between the Andes, Amazonia and Mesoamerica",Ernst Halbmayer,indigenous_knowledge_americas,2,-0.3143556,-0.20051499
+/works/OL5777856W,Dictionary of the Guyanese Amerindians,Lal Balkaran,indigenous_knowledge_americas,2,-0.07986636,-0.2587065
+/works/OL17510269W,Knowing the Day Knowing the World,Lesley Green,indigenous_knowledge_americas,0,-0.02183527,-0.038667124
+/works/OL16938724W,Caribbean religious history,"Ennis B. Edmonds, Michelle A. Gonzalez",indigenous_knowledge_americas,2,-0.11296565,-0.21065024
+/works/OL2886241W,Countering development,David D. Gow,indigenous_knowledge_americas,2,-0.20442206,-0.21248798
+/works/OL16694183W,La protección del conocimiento tradicional en Colombia,Florelia Vallejo Trujillo,indigenous_knowledge_americas,2,-0.38232407,-0.31585312
+/works/OL4388331W,"Proceedings of the Pacific Council on Latin American Studies, 2002-2003",Pacific Coast Council on Latin American Studies. Meeting,indigenous_knowledge_americas,2,-0.25680357,-0.28455797
+/works/OL726465W,The sacred mountain of Colombia's Kogi Indians,Gerardo Reichel-Dolmatoff,indigenous_knowledge_americas,2,-0.023919208,-0.3123552
+/works/OL726476W,Los Kogi,Gerardo Reichel-Dolmatoff,indigenous_knowledge_americas,2,-0.10909645,-0.4594436
+/works/OL15621296W,The Sacred Mountain of Colombia's Kogi Indians,Gerardo Reichel-Dolmatoff,indigenous_knowledge_americas,2,-0.025926355,-0.28075737
+/works/OL23928609W,Kogis,Eric Julien,indigenous_knowledge_americas,2,-0.24491158,-0.3083331
+/works/OL44817704W,Territorio Kogi,Jorge Eliécer Ortega Cárdenas,indigenous_knowledge_americas,2,-0.054606054,-0.44528165
+/works/OL726460W,Los Kogi de Sierra Nevada,Gerardo Reichel-Dolmatoff,indigenous_knowledge_americas,2,-0.13634396,-0.4366892
+/works/OL3189909W,"Sistemas jurídicos paez, kogi, wayúu y tule",Carlos César Perafán Simmonds,indigenous_knowledge_americas,2,-0.007208581,-0.433418
+/works/OL13184790W,Saminashi,Juan Pablo Duque Cañas,indigenous_knowledge_americas,2,-0.082835704,-0.4284901
+/works/OL2819854W,El solitario corazón comenzó a hablar,Pio Emilio Cucchiella,indigenous_knowledge_americas,2,-0.11198487,-0.40676382
+/works/OL15746710W,"Introducción a las artes adivinatorias como prácticas mágico religiosas de caracter experimental entre los grupos indígenas serranos de la Sierra Nevada de Santa Marta, Colombia",,indigenous_knowledge_americas,2,-0.014510627,-0.31451085
+/works/OL4706946W,The evolution of social hierarchy in a Muisca chiefdom of the northern Andes of Colombia =,Ana María Boada Rivas,indigenous_knowledge_americas,2,-0.26231068,-0.4271444
+/works/OL24044280W,Los muiscas,Mercedes Medina de Pacheco,indigenous_knowledge_americas,2,-0.119157694,-0.535568
+/works/OL3113864W,Textiles de las culturas muisca y guane,Gladys Tavera de Téllez,indigenous_knowledge_americas,2,0.070438586,-0.26077917
+/works/OL32551082W,Territorios y memorias culturales muiscas,"Pablo Felipe Gómez Montáñez, Fredy Leonardo Reyes Albarracín",indigenous_knowledge_americas,2,-0.21804443,-0.51116776
+/works/OL865209W,Los muiscas,José Rozo Gauta,indigenous_knowledge_americas,2,-0.16788658,-0.5391272
+/works/OL10961521W,"Orfebrería prehispánica de Colombia, estilos tolima y muisca",José Pérez de Barradas,indigenous_knowledge_americas,2,-0.21257694,-0.5359934
+/works/OL12470131W,El territorio de los muiscas a la llegada de los españoles,Ana María Falchetti,indigenous_knowledge_americas,2,-0.22914314,-0.5328049
+/works/OL7291067W,Ornamentación calada en la orfebrería indígena precolombina (Muisca y Tolima),David Consuegra,indigenous_knowledge_americas,2,-0.11955744,-0.34652492
+/works/OL1279753W,Estado actual de los estudios etnologicos sobre los muiscas del Reino de Nueva Granada (Colombia),José Pérez de Barradas,indigenous_knowledge_americas,2,-0.19957359,-0.58572996
+/works/OL1279757W,Orfebrería prehispánica de Colombia : estilos tolima y muisca,José Pérez de Barradas,indigenous_knowledge_americas,2,-0.24253741,-0.51541656
+/works/OL865884W,Regional archaeology in the Muisca territory,Carl Henrik Langebaek,indigenous_knowledge_americas,2,-0.19184452,-0.25270945
+/works/OL23760245W,"Los muisca, un pueblo en reconstrucción",,indigenous_knowledge_americas,2,-0.15236868,-0.5007394
+/works/OL45800680W,Documenting the emergence of chiefdoms in the Muisca territory,"Robert D. Drennan, Carl Henrik Langebaek",indigenous_knowledge_americas,2,-0.22557722,-0.2865076
+/works/OL1279754W,Los muiscas antes de la Conquista,José Pérez de Barradas,indigenous_knowledge_americas,2,-0.18751419,-0.52847964
+/works/OL16217971W,Mensajes de la madre tierra en territorio muisca,"Roberto Santos Curvelo, Fabio Mejía Botero",indigenous_knowledge_americas,2,-0.14077441,-0.40644422
+/works/OL38960007W,El Dorado,"Elio Sala, Juán Darío Giraldo E., Rubino Cinquegranelli",indigenous_knowledge_americas,2,-0.15445083,-0.50624603
+/works/OL865206W,Cultura material de los muiscas,José Rozo Gauta,indigenous_knowledge_americas,2,-0.12225384,-0.43526086
+/works/OL37340209W,"Los muiscas, pensamiento y realizaciones",Francisco Beltrán Peña,indigenous_knowledge_americas,2,-0.20544922,-0.54807657
+/works/OL37393985W,La medicina en la cultura muisca,Roberto de Zubiría C.,indigenous_knowledge_americas,2,-0.0027912308,-0.40206045
+/works/OL42602542W,Instituciones jurídicas de la sociedad muisca,"Beatriz Eugenia Said Gomez, Jose Fernando Zarta Arzabaleta",indigenous_knowledge_americas,2,-0.16301882,-0.5401916
+/works/OL33361655W,Uque bique muisca,Federmán Contreras Díaz,indigenous_knowledge_americas,2,-0.16735329,-0.4236928
+/works/OL22797918W,Los muiscas en los siglos XVI y XVII,"Jorge Augusto Gamboa Mendoza, Alejandro Bernal",indigenous_knowledge_americas,2,-0.079997845,-0.50389165
+/works/OL22383934W,Los chyquys de la nación muisca chibcha,Pablo Felipe Gómez Montáñez,indigenous_knowledge_americas,2,-0.26443997,-0.38686618
+/works/OL37213041W,Establecimiento de tipologías en la cerámica muisca,Lucía Rojas de Perdomo,indigenous_knowledge_americas,2,-0.17082107,-0.44206446
+/works/OL13610679W,"Festejos muiscas en El Infiernito, Valle de Leyva",Manuel Salge Ferro,indigenous_knowledge_americas,2,-0.20114481,-0.43128443
+/works/OL26508383W,Decolonial Philosophy of Indigenous Colombia,Juan Alejandro Chindoy Chindoy,indigenous_knowledge_americas,2,-0.14092052,-0.29516134
+/works/OL45855821W,Los kamëntsá y el legado visual de la diócesis de Mocoa-Sibundoy,Tirsa Taira Chindoy Chasoy,indigenous_knowledge_americas,2,-0.079962134,-0.45635718
+/works/OL42936911W,"De conflictos, perdones y justicias","Pablo Felipe Gómez Montáñez, Sarai Andrea Gómez-Cáceres, Fredy Leonardo Reyes Albarracín",indigenous_knowledge_americas,2,-0.21537326,-0.50108
+/works/OL513791W,A reference grammar of Northern Embera languages,Charles Arthur Mortensen,indigenous_knowledge_americas,2,-0.082539484,-0.32847884
+/works/OL31545708W,Proyecto Embera-Wera,"Esmeralda Ruiz González, María Teresa Duque Orrego",indigenous_knowledge_americas,2,-0.022404637,-0.33823788
+/works/OL44643039W,Crisis humanitaria del pueblo Emberá,"Consultaría para los Derechos Humanos y el Desplazamiento, Organización Nacional Indígena de Colombia",indigenous_knowledge_americas,2,-0.19013174,-0.3297567
+/works/OL1423894W,"A dangerously toxic new frog (Phyllobates) used by Emberá Indians of western Colombia, with discussion of blowgun fabrication and dart poisoning",Charles W. Myers,indigenous_knowledge_americas,2,-0.15405601,-0.2548683
+/works/OL33583799W,"Zenú, emberá, wayú",Enrique Rafael Morales Guerrero,indigenous_knowledge_americas,2,-0.02431326,-0.45587286
+/works/OL17361178W,"Bia 'Buma : el VIH/sida en los Emberá Chamí de Cristianía, Colombia. - 1. edición",,indigenous_knowledge_americas,2,-0.06550738,-0.33300748
+/works/OL17802813W,Emberas territorio y biodiversidad : estrategias de control en escenarios de conflicto,María del Pilar Valencia,indigenous_knowledge_americas,2,-0.24288861,-0.23215045
+/works/OL19242814W,Cuéntelos bien como yo le conté,,indigenous_knowledge_americas,2,-0.13952433,-0.4043406
+/works/OL2420519W,Ideas y prácticas ambientales del pueblo Embera del Chocó,Camilo Antonio Hernández,indigenous_knowledge_americas,2,-0.19622493,-0.3849325
+/works/OL19253132W,Geografía humana de Colombia,Instituto Colombiano de Cultura Hispánica,indigenous_knowledge_americas,2,-0.30770433,-0.392988
+/works/OL23776230W,Oralidad y escritura entre los embera-chamí de Risaralda,Fernando Romero Loaiza,indigenous_knowledge_americas,2,0.03210902,-0.35330442
+/works/OL42467672W,"Prospección arqueológica del resguardo embera de Chajeradó, Murindo, Antioquia",Emilio Piazzini,indigenous_knowledge_americas,2,-0.23167402,-0.4532893
+/works/OL4034802W,Los embera y los cuna,Patricia Vargas Sarmiento,indigenous_knowledge_americas,2,-0.22544846,-0.466981
+/works/OL44636159W,Drúa-iujá,Cabildo Mayor del Pueblo Embera de Risaralda,indigenous_knowledge_americas,2,-0.11240475,-0.3515833
+/works/OL789479W,Viaje y violencia,Anne-Marie Losonczy,indigenous_knowledge_americas,2,0.038704354,-0.31240007
+/works/OL23357865W,Población indígena en Antioquia,,indigenous_knowledge_americas,2,-0.24413826,-0.48295712
+/works/OL2844671W,La tonina enamorada,Mariana Avilán H.,indigenous_knowledge_americas,2,-0.122967914,-0.43913123
+/works/OL3049393W,Semejantes a los dioses,Luis Guillermo Vasco Uribe,indigenous_knowledge_americas,2,-0.0305012,-0.4155076
+/works/OL22393031W,Colombia diversa,César A. Zuluaga Zuluaga,indigenous_knowledge_americas,2,-0.2143049,-0.42020407
+/works/OL38440166W,Las que cuidan el fogón,Magdalena Ramnek,indigenous_knowledge_americas,2,-0.066300124,-0.4714093
+/works/OL13147096W,"Deara, una ruta de acercamiento al espacio y a la arquitectura de los indígenas Embera y Waunana",Claudio Varini,indigenous_knowledge_americas,2,-0.06372693,-0.3272855
+/works/OL13453172W,Simposio La recuperación de lenguas nativas como búsqueda de identidad étnica,Congreso Nacional de Antropología (Colombia) (7th 1994 Universidad de Antioquia),indigenous_knowledge_americas,2,-0.2611307,-0.41830474
+/works/OL24048351W,El jaibaná en la encrucijada,Pablo Jaramillo Salazar,indigenous_knowledge_americas,2,-0.09125413,-0.51315606
+/works/OL32584172W,Formación en derechos humanos y principios humanitarios del derecho internacional humanitario dirigido a pueblos indígenas,Protección y Promoción de los Derechos Humanos Colombia. Consejería Presidencial para la Defensa,indigenous_knowledge_americas,2,-0.20620674,-0.33020157
+/works/OL19451294W,"Chajeradó, el río de la caña flecha partida",,indigenous_knowledge_americas,2,-0.25822762,-0.40533686
+/works/OL16136925W,La trama interétnica,Anne-Marie Losonczy,indigenous_knowledge_americas,2,-0.14032729,-0.40604797
+/works/OL38581376W,Lenguas amerindias,"Elsa Benavides, François Correa",indigenous_knowledge_americas,2,-0.15314914,-0.41843802
+/works/OL22337412W,"Pueblos indígenas, Estados y derechos humanos","X. Etxeberria, Manuel Ramiro Muñoz",indigenous_knowledge_americas,2,-0.2287995,-0.3244371
+/works/OL37845269W,Autonomía en el Movimiento Indígena NASA a Partir de la Constitución Política de Colombia de 1991,"Yaneth Rocío Valero Gutiérrez, Instituciones y Globalización Staff Grupo de Investigación Cultura Política",indigenous_knowledge_americas,2,-0.2405466,-0.39604402
+/works/OL44844996W,Entre la emancipación y la captura,Vilma Almendra Quiguanás,indigenous_knowledge_americas,2,-0.17034528,-0.5075016
+/works/OL4190957W,"Alvaro Ulcué, nasa pal",Ezio Roattino,indigenous_knowledge_americas,2,-0.103748485,-0.40365264
+/works/OL24038930W,Proyecto Nasa,Gustavo Wilches-Chaux,indigenous_knowledge_americas,2,-0.20571174,-0.111978665
+/works/OL15114198W,Öko-Kosmologie,Josef Drexler,indigenous_knowledge_americas,0,-0.14589138,-0.08049076
+/works/OL2721285W,Intercultural utopias,Joanne Rappaport,indigenous_knowledge_americas,2,-0.21094073,-0.32971573
+/works/OL14988429W,La guardia indígena nasa y el arte de la resistencia pacífica,Eduardo Sandoval Forero,indigenous_knowledge_americas,2,-0.20046622,-0.44382504
+/works/OL44963845W,Extractivismo minero en Colombia y América Latina,"Barbara Göbel, Astrid Ulloa, Göbel, Barbara (Anthropologist)",indigenous_knowledge_americas,2,-0.26694772,-0.28494152
+/works/OL15504126W,La tierra contra la muerte,Juan Houghton,indigenous_knowledge_americas,2,-0.18475519,-0.37759355
+/works/OL22752992W,El pensamiento de la comunidad nasa yuwe,Alexander Ávila Martínez,indigenous_knowledge_americas,2,0.009310363,-0.21757029
+/works/OL44029081W,Kiwe Ten'za,"Martha Parada, Nora Tobar, Parada, Mauricio (Writer on Paez Indians)",indigenous_knowledge_americas,2,0.050113343,-0.24666773
+/works/OL44670659W,Serie Rio de letras,Colombia. Ministerio de Educación Nacional,indigenous_knowledge_americas,2,-0.15862866,-0.495668
+/works/OL32765515W,Construcción de micromundos,Erwin Meza Vega,indigenous_knowledge_americas,2,-0.120788276,-0.32084978
+/works/OL32800183W,"Los ""teatros"" de la memoria","Colombia) Simposio ""Los 'teatros' de la memoria: dinámicas y tensiones"" (2010 Santa Marta",indigenous_knowledge_americas,2,-0.115441926,-0.4961161
+/works/OL44874281W,Reconciliaciones y resistencias,"Jhon Alexánder Idrobo Velasco, Johanna Amaya Panche",indigenous_knowledge_americas,2,-0.08238003,-0.20833297
+/works/OL32478321W,"El arco, el cuerpo y la seña",Hugo Portela Guarín,indigenous_knowledge_americas,2,-0.07615387,-0.25549904
+/works/OL23965075W,U' sxakwe sa'tkwe ena's umnxi,,indigenous_knowledge_americas,2,-0.09239592,-0.3919713
+/works/OL43365845W,Experiencias de revitalización cultural y lingüística,"Daniel Guzmán Paco, Libertad Pinto Rodríguez, FUNPROEIB Andes",indigenous_knowledge_americas,2,-0.15721384,-0.3845036
+/works/OL18586819W,De los saberes de la emancipación y de la dominación,Ana Esther Ceceña,indigenous_knowledge_americas,2,-0.09995956,-0.24816489
+/works/OL45056457W,"Pos-acuerdo y territorio en las comunidades indígenas, afro y campesinas en el norte del Cauca","Jairo Vladimir Llano Franco, Nicole Velasco Cano, Hermán Gómez Gutiérrez, Jenny Marcela Trejos Trejos",indigenous_knowledge_americas,2,-0.22625218,-0.477904
+/works/OL12240644W,Study of future world markets for agricultural aircraft,F. W. Gobetz,indigenous_knowledge_americas,0,-0.07593194,0.10451439
+/works/OL32037359W,"Mujeres indígenas haciendo, investigando y reescribiendo lo político en América Latina",Astrid Ulloa,indigenous_knowledge_americas,2,-0.17022295,-0.37743735
+/works/OL44454173W,Lo que saben los wayuu,"Rafael Segundo Mercado Epieyuu, Alberto Saldarriaga Roa, Fernando Urbina Rangel, María Fernanda Acosta Convers, Leonardo Otálora Cotrino, Guillermo López Acevedo, Universidad de Bogotá ""Jorge Tadeo Lozano."" Facultad de Artes y Diseño",indigenous_knowledge_americas,2,-0.09927827,-0.45079827
+/works/OL23188277W,Apalaanchi,Santiago Harker,indigenous_knowledge_americas,2,-0.09270391,-0.33263025
+/works/OL19226952W,"Censo binacional de la étnia wayuu, 1992",Venezuela. Oficina Central de Estadística e Informática,indigenous_knowledge_americas,2,-0.119542375,-0.59232426
+/works/OL32560189W,El pueblo Wayuu,Carmen Laura Paz Reverol,indigenous_knowledge_americas,2,-0.034848765,-0.42808142
+/works/OL19109374W,Las salinas de los Wayúu,,indigenous_knowledge_americas,2,-0.032633647,-0.33536586
+/works/OL15979501W,La masacre de Bahía Portete,Comisión Nacional de Reparación y Reconciliación (Colombia). Área de Memoria Histórica,indigenous_knowledge_americas,2,-0.059228145,-0.4127424
+/works/OL22750014W,Los Wayuu en la historia de América,Edén Vizcaíno,indigenous_knowledge_americas,2,-0.15121064,-0.51366353
+/works/OL23852596W,Conceptos de la sexualidad Wayuu,Olga Mejía M.,indigenous_knowledge_americas,2,0.10286862,-0.26178917
+/works/OL18996722W,Contribuciones al estudio de la etnomúsica y cultura wayuu,,indigenous_knowledge_americas,2,0.06993327,-0.36197183
+/works/OL42495760W,Material life and social metaphor,Alberto Rivera Gutiérrez,indigenous_knowledge_americas,2,-0.12402796,-0.32627812
+/works/OL38575755W,La cosmovisión wayuú a través de los textiles,Enza García,indigenous_knowledge_americas,2,0.003545869,-0.31736398
+/works/OL33440459W,Los esclavos wayuu de las haciendas del Zulia,Fredy Luis González Zubiría,indigenous_knowledge_americas,2,-0.082018316,-0.45157388
+/works/OL6080433W,La disputa y la palabra,Weildler Guerra Curvelo,indigenous_knowledge_americas,2,-0.029515937,-0.44593123
+/works/OL32451620W,Enfermedad y su tratamiento entre los wayuu,Katharina Bernhard,indigenous_knowledge_americas,2,0.120201044,-0.2867215
+/works/OL44045015W,Matriarchale Spuren in Kolumbien,Theresia Sauter Bailliet,indigenous_knowledge_americas,2,-0.02637952,-0.11316897
+/works/OL19117191W,Desde el desierto,,indigenous_knowledge_americas,2,-0.07618046,-0.38512257
+/works/OL25038320W,Stratégies et Politiques de Reconnaissance et D'identité,Claudia Puerta Silva,indigenous_knowledge_americas,2,-0.2735829,-0.2318839
+/works/OL24026914W,Cuando la sal se corrompe--,Hernán Darío Correa,indigenous_knowledge_americas,2,-0.02553457,-0.33650133
+/works/OL32116484W,Hijos de la lluvia y el desierto,Alfredo Correa Losada,indigenous_knowledge_americas,2,-0.04372124,-0.5983756
+/works/OL32621518W,Del monumento al pensamiento,Museo Nacional de Colombia,indigenous_knowledge_americas,2,-0.21646284,-0.46534595
+/works/OL23345373W,Propuestas populares de política pública para la construcción de la paz,Planeta Paz (Project : Colombia),indigenous_knowledge_americas,2,-0.17147344,-0.28813848
+/works/OL45267181W,Desecrated land,"Roberto Pineda Camacho, Organización Nacional Indígena de Colombia, Centro de Cooperación al Indígena (Colombia), Gesamthochschule Kassel",indigenous_knowledge_americas,2,-0.30319867,-0.24616505
+/works/OL22391825W,Subregiones productivas del Caribe colombiano,Joaquín Viloria de la Hoz,indigenous_knowledge_americas,2,-0.2188234,-0.39251688
+/works/OL33060914W,Industria extractiva y derechos étnicos,Liza González Perafán,indigenous_knowledge_americas,2,-0.20883943,-0.19135414
+/works/OL16014677W,Decolonizing native histories,Florencia E. Mallon,indigenous_knowledge_americas,2,-0.25244078,-0.25399306
+/works/OL5958624W,Inventing indigenous knowledge,Lynn Swartley,indigenous_knowledge_americas,2,-0.23854654,-0.1915285
+/works/OL16572168W,"Education, indigenous knowledge, and development in the global south",Anders Breidlid,indigenous_knowledge_americas,0,-0.26486325,-0.103601076
+/works/OL21070490W,Native American Environmentalism,Joy Porter,indigenous_knowledge_americas,0,-0.29930338,0.072191
+/works/OL23317976W,The river of life,Michael E. Marchand,indigenous_knowledge_americas,0,-0.22600065,0.12863164
+/works/OL16343146W,Contemporary issues in California archaeology,Society for American Archaeology. Meeting,indigenous_knowledge_americas,2,-0.24399671,-0.17393056
+/works/OL5911969W,Changing the Face of Mathematics,National Council of Teachers of Mathematics.,indigenous_knowledge_americas,2,0.01933518,-0.06858988
+/works/OL19668875W,The Water Walker,Joanne Robertson,indigenous_knowledge_americas,0,-0.16613379,0.16273981
+/works/OL21222760W,Climate Change and Indigenous Peoples in the United States,"Julie Koppel Maldonado, Benedict Colombi, Rajul Pandya",indigenous_knowledge_americas,0,-0.33456686,0.116411194
+/works/OL22317760W,"Seed sovereignty, food security",Vandana Shiva,indigenous_knowledge_americas,0,-0.08996812,0.24478163
+/works/OL21261910W,Our Ice Is Vanishing,Shelley Wright,indigenous_knowledge_americas,0,-0.27162793,0.048155
+/works/OL15526391W,Understanding child abuse and neglect,Cynthia Crosson-Tower,indigenous_knowledge_americas,0,-0.041092366,0.051622923
+/works/OL15728539W,Proud to be Inuvialuit,"Mindy Willett, Tessa Macintosh",indigenous_knowledge_americas,0,-0.22093795,-0.07765606
