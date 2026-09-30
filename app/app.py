@@ -31,6 +31,14 @@ THEME_LABELS = {
     "yoga_way_of_life": "Yoga as a Way of Life",
 }
 
+THEME_SYMBOLS = {
+    "humans_and_nature": "❧",
+    "indigenous_knowledge_americas": "◉",
+    "yoga_philosophy": "ॐ",
+    "ayurveda_indian_spirituality": "✦",
+    "yoga_way_of_life": "☼",
+}
+
 KNOWLEDGE_ORIENTATIONS = {
     "Open to all approaches": "",
     "Philosophical and contemplative": (
@@ -81,6 +89,42 @@ st.markdown(
 
     [data-testid="stHeader"] {
         background: rgba(244,240,230,.86);
+    }
+
+    [data-testid="stSidebar"] {
+        background: #E8E8D8;
+        border-right: 1px solid rgba(85,122,70,.16);
+    }
+
+    [data-testid="stSidebar"] h1,
+    [data-testid="stSidebar"] h2,
+    [data-testid="stSidebar"] h3 {
+        color: #173A2B;
+    }
+
+    .path-symbol {
+        color: #557A46;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 1.7rem;
+        line-height: 1;
+        margin-right: .35rem;
+    }
+
+    .sidebar-book {
+        padding: .65rem 0;
+        border-bottom: 1px solid rgba(85,122,70,.16);
+    }
+
+    .sidebar-book-title {
+        color: #173A2B;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .sidebar-book-author {
+        color: #667168;
+        font-size: .82rem;
     }
 
     .block-container {
@@ -440,6 +484,82 @@ except Exception as exc:
     st.stop()
 
 
+with st.sidebar:
+    st.markdown("## Browse the Library")
+    st.caption("Explore the catalogue directly by path, title or author.")
+
+    browse_theme = st.selectbox(
+        "Path of knowledge",
+        list(THEME_LABELS.keys()),
+        format_func=lambda x: f"{THEME_SYMBOLS[x]}  {THEME_LABELS[x]}",
+        key="browse_theme",
+    )
+
+    browse_query = st.text_input(
+        "Search title or author",
+        placeholder="Type a title or author…",
+        key="browse_query",
+    )
+
+    browse_books = books[
+        books["collection_theme"].eq(browse_theme)
+    ].copy()
+
+    if browse_query.strip():
+        term = browse_query.strip()
+        browse_books = browse_books[
+            browse_books["title"].fillna("").str.contains(term, case=False, regex=False)
+            | browse_books["author"].fillna("").str.contains(term, case=False, regex=False)
+        ]
+
+    browse_books = browse_books.sort_values(
+        by="title",
+        key=lambda s: s.fillna("").str.lower(),
+    )
+
+    st.caption(
+        f"{len(browse_books)} books in {THEME_LABELS[browse_theme]}"
+    )
+
+    browse_limit = st.selectbox(
+        "Show",
+        [10, 25, 50],
+        index=0,
+        key="browse_limit",
+    )
+
+    for _, browse_row in browse_books.head(browse_limit).iterrows():
+        browse_title = safe_text(browse_row.get("title"), "Untitled")
+        browse_author = safe_text(browse_row.get("author"), "Author unavailable")
+        browse_isbn = safe_text(browse_row.get("isbn_clean"))
+
+        if browse_isbn:
+            browse_url = (
+                "https://www.google.com/search?q="
+                + quote_plus(f'ISBN {browse_isbn} "{browse_title}"')
+            )
+        else:
+            browse_url = (
+                "https://www.google.com/search?q="
+                + quote_plus(f'"{browse_title}" "{browse_author}" book')
+            )
+
+        st.markdown(
+            f"""
+            <div class="sidebar-book">
+                <div class="sidebar-book-title">{html.escape(browse_title)}</div>
+                <div class="sidebar-book-author">{html.escape(browse_author)}</div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+        st.link_button(
+            "Find book ↗",
+            browse_url,
+            use_container_width=True,
+        )
+
+
 st.markdown(
     """
     <section class="hero">
@@ -544,6 +664,30 @@ if explore:
                 orientation=selected_orientation,
             )
 
+            wider_results = recommend(
+                query=query,
+                books=books,
+                embeddings=embeddings,
+                model=model,
+                n=20,
+                theme=None,
+                orientation=selected_orientation,
+            )
+
+            chosen_titles = {
+                normalize_title(title)
+                for title in results["title"].tolist()
+            }
+
+            if selected_theme != "All paths":
+                wider_results = wider_results[
+                    ~wider_results["collection_theme"].eq(selected_theme)
+                ]
+
+            wider_results = wider_results[
+                ~wider_results["title"].apply(normalize_title).isin(chosen_titles)
+            ].head(3)
+
         st.divider()
         st.header("Books that may resonate with your inquiry")
         st.markdown(
@@ -563,6 +707,20 @@ if explore:
                 with col:
                     render_book_card(row)
 
+        if len(wider_results) > 0:
+            st.markdown("### You might also like")
+            st.markdown(
+                '<div class="section-intro">'
+                "A few additional resonances from the wider library, beyond the "
+                "collection path you selected."
+                "</div>",
+                unsafe_allow_html=True,
+            )
+            extra_cols = st.columns(3)
+            for col, (_, row) in zip(extra_cols, wider_results.iterrows()):
+                with col:
+                    render_book_card(row)
+
 st.divider()
 st.header("Browse paths of knowledge")
 st.markdown(
@@ -575,13 +733,20 @@ st.markdown(
 )
 
 path_cols = st.columns(5)
-path_icons = ["🌿", "🌎", "🕉️", "🌾", "🧘"]
-for col, icon, (code, label) in zip(path_cols, path_icons, THEME_LABELS.items()):
+for col, (code, label) in zip(path_cols, THEME_LABELS.items()):
     with col:
         count = int((books["collection_theme"] == code).sum())
-        st.markdown(f"### {icon}")
+        symbol = THEME_SYMBOLS[code]
+        st.markdown(
+            f'<div class="path-symbol">{symbol}</div>',
+            unsafe_allow_html=True,
+        )
         st.markdown(f"**{label}**")
         st.caption(f"{count} books")
+
+st.caption(
+    "Open the Browse the Library sidebar to search these paths directly by title or author."
+)
 
 st.divider()
 st.header("About the project")
