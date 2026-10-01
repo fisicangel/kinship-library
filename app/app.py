@@ -491,79 +491,139 @@ except Exception as exc:
 
 
 with st.sidebar:
-    st.markdown("## Browse the Library")
-    st.caption("Explore the catalogue directly by path, title or author.")
-
-    browse_theme = st.selectbox(
-        "Path of knowledge",
-        list(THEME_LABELS.keys()),
-        format_func=lambda x: f"{THEME_SYMBOLS[x]}  {THEME_LABELS[x]}",
-        key="browse_theme",
+    st.markdown("## Search the Library")
+    st.caption(
+        "Search the whole catalogue by title or author. Each result shows its path of knowledge so you can continue exploring related books."
     )
 
     browse_query = st.text_input(
-        "Search title or author",
-        placeholder="Type a title or author…",
+        "Title or author",
+        placeholder="For example: Donna Haraway…",
         key="browse_query",
     )
 
-    browse_books = books[
-        books["collection_theme"].eq(browse_theme)
-    ].copy()
-
     if browse_query.strip():
         term = browse_query.strip()
-        browse_books = browse_books[
-            browse_books["title"].fillna("").str.contains(term, case=False, regex=False)
-            | browse_books["author"].fillna("").str.contains(term, case=False, regex=False)
-        ]
+        browse_books = books[
+            books["title"].fillna("").str.contains(term, case=False, regex=False)
+            | books["author"].fillna("").str.contains(term, case=False, regex=False)
+        ].copy()
 
-    browse_books = browse_books.sort_values(
-        by="title",
-        key=lambda s: s.fillna("").str.lower(),
-    )
+        browse_books = browse_books.sort_values(
+            by="title",
+            key=lambda s: s.fillna("").str.lower(),
+        )
 
-    st.caption(
-        f"{len(browse_books)} books in {THEME_LABELS[browse_theme]}"
-    )
+        st.caption(f"{len(browse_books)} matching books")
 
-    browse_limit = st.selectbox(
-        "Show",
-        [10, 25, 50],
-        index=0,
-        key="browse_limit",
-    )
-
-    for _, browse_row in browse_books.head(browse_limit).iterrows():
-        browse_title = safe_text(browse_row.get("title"), "Untitled")
-        browse_author = safe_text(browse_row.get("author"), "Author unavailable")
-        browse_isbn = safe_text(browse_row.get("isbn_clean"))
-
-        if browse_isbn:
-            browse_url = (
-                "https://www.google.com/search?q="
-                + quote_plus(f'ISBN {browse_isbn} "{browse_title}"')
-            )
+        if len(browse_books) == 0:
+            st.info("No title or author matched that search.")
         else:
-            browse_url = (
-                "https://www.google.com/search?q="
-                + quote_plus(f'"{browse_title}" "{browse_author}" book')
+            browse_limit = st.selectbox(
+                "Show",
+                [10, 25, 50],
+                index=0,
+                key="browse_limit",
             )
 
-        st.markdown(
-            f"""
-            <div class="sidebar-book">
-                <div class="sidebar-book-title">{html.escape(browse_title)}</div>
-                <div class="sidebar-book-author">{html.escape(browse_author)}</div>
-            </div>
-            """,
-            unsafe_allow_html=True,
+            for _, browse_row in browse_books.head(browse_limit).iterrows():
+                browse_title = safe_text(browse_row.get("title"), "Untitled")
+                browse_author = safe_text(browse_row.get("author"), "Author unavailable")
+                browse_isbn = safe_text(browse_row.get("isbn_clean"))
+                browse_theme_code = safe_text(browse_row.get("collection_theme"))
+                browse_theme_label = THEME_LABELS.get(
+                    browse_theme_code,
+                    browse_theme_code.replace("_", " ").title(),
+                )
+                browse_symbol = THEME_SYMBOLS.get(browse_theme_code, "❧")
+
+                if browse_isbn:
+                    browse_url = (
+                        "https://www.google.com/search?q="
+                        + quote_plus(f'ISBN {browse_isbn} "{browse_title}"')
+                    )
+                else:
+                    browse_url = (
+                        "https://www.google.com/search?q="
+                        + quote_plus(f'"{browse_title}" "{browse_author}" book')
+                    )
+
+                st.markdown(
+                    f"""
+                    <div class="sidebar-book">
+                        <div class="sidebar-book-title">{html.escape(browse_title)}</div>
+                        <div class="sidebar-book-author">{html.escape(browse_author)}</div>
+                        <div class="path-note">{browse_symbol} {html.escape(browse_theme_label)}</div>
+                    </div>
+                    """,
+                    unsafe_allow_html=True,
+                )
+                st.link_button(
+                    "Find book ↗",
+                    browse_url,
+                    use_container_width=True,
+                )
+    else:
+        st.markdown("### Explore a path")
+        st.caption(
+            "Or choose a knowledge path to discover books that entered the library through a similar thematic route."
         )
-        st.link_button(
-            "Find book ↗",
-            browse_url,
-            use_container_width=True,
+
+        browse_theme = st.selectbox(
+            "Path of knowledge",
+            list(THEME_LABELS.keys()),
+            format_func=lambda x: f"{THEME_SYMBOLS[x]}  {THEME_LABELS[x]}",
+            key="browse_theme",
         )
+
+        path_books = books[
+            books["collection_theme"].eq(browse_theme)
+        ].copy().sort_values(
+            by="title",
+            key=lambda s: s.fillna("").str.lower(),
+        )
+
+        st.caption(
+            f"{len(path_books)} books in {THEME_LABELS[browse_theme]}"
+        )
+
+        preview_limit = st.selectbox(
+            "Show",
+            [10, 25, 50],
+            index=0,
+            key="path_preview_limit",
+        )
+
+        for _, browse_row in path_books.head(preview_limit).iterrows():
+            browse_title = safe_text(browse_row.get("title"), "Untitled")
+            browse_author = safe_text(browse_row.get("author"), "Author unavailable")
+            browse_isbn = safe_text(browse_row.get("isbn_clean"))
+
+            if browse_isbn:
+                browse_url = (
+                    "https://www.google.com/search?q="
+                    + quote_plus(f'ISBN {browse_isbn} "{browse_title}"')
+                )
+            else:
+                browse_url = (
+                    "https://www.google.com/search?q="
+                    + quote_plus(f'"{browse_title}" "{browse_author}" book')
+                )
+
+            st.markdown(
+                f"""
+                <div class="sidebar-book">
+                    <div class="sidebar-book-title">{html.escape(browse_title)}</div>
+                    <div class="sidebar-book-author">{html.escape(browse_author)}</div>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+            st.link_button(
+                "Find book ↗",
+                browse_url,
+                use_container_width=True,
+            )
 
 
 st.markdown(
