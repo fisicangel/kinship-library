@@ -20,8 +20,8 @@ st.set_page_config(
 
 APP_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = APP_DIR.parent
-BOOKS_FILE = PROJECT_ROOT / "data" / "processed" / "app_books.csv"
-EMBEDDINGS_FILE = PROJECT_ROOT / "models" / "app_book_embeddings.npy"
+BOOKS_FILE = PROJECT_ROOT / "data" / "processed" / "app_books_expanded.csv"
+EMBEDDINGS_FILE = PROJECT_ROOT / "models" / "app_book_embeddings_expanded.npy"
 
 THEME_LABELS = {
     "humans_and_nature": "Humans and Nature",
@@ -384,7 +384,7 @@ def shorten(text, limit=420):
     return text[:limit].rsplit(" ", 1)[0] + "…"
 
 
-def recommend(query, books, embeddings, model, n=6, theme=None, orientation=None):
+def recommend(query, books, embeddings, model, n=6, theme=None, orientation=None, prioritize_curated=False):
     orientation_text = KNOWLEDGE_ORIENTATIONS.get(orientation, "")
     enriched_query = query
     if orientation_text:
@@ -399,13 +399,19 @@ def recommend(query, books, embeddings, model, n=6, theme=None, orientation=None
     )[0]
 
     similarities = embeddings @ query_embedding
+    ranking_scores = similarities.copy()
+
+    if prioritize_curated and "is_curated" in books.columns:
+        curated_mask = books["is_curated"].astype(str).str.lower().isin(["true", "1"]).to_numpy()
+        ranking_scores = ranking_scores + np.where(curated_mask, 0.08, 0.0)
+
     eligible = np.ones(len(books), dtype=bool)
 
     if theme and theme != "All paths":
         eligible = books["collection_theme"].eq(theme).to_numpy()
 
     candidate_indices = np.where(eligible)[0]
-    candidate_scores = similarities[candidate_indices]
+    candidate_scores = ranking_scores[candidate_indices]
     ranked_indices = candidate_indices[np.argsort(candidate_scores)[::-1]]
 
     selected_indices = []
@@ -648,6 +654,16 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+prioritize_curated = st.toggle(
+    "Prioritize the curated Kinship collection",
+    value=False,
+    help="Gives a gentle additional weight to 25 books selected by the creator while keeping the full library in the search.",
+)
+
+if prioritize_curated:
+    st.caption("Curated Kinship gently prioritizes a small creator selected collection. Semantic relevance remains part of every recommendation.")
+
+
 if explore:
     if not query.strip():
         st.warning("Write an inquiry or choose one of the starting questions first.")
@@ -662,6 +678,7 @@ if explore:
                 n=number_books,
                 theme=None if selected_theme == "All paths" else selected_theme,
                 orientation=selected_orientation,
+                prioritize_curated=prioritize_curated,
             )
 
             wider_results = recommend(
@@ -672,6 +689,7 @@ if explore:
                 n=20,
                 theme=None,
                 orientation=selected_orientation,
+                prioritize_curated=prioritize_curated,
             )
 
             chosen_titles = {
@@ -752,8 +770,7 @@ st.divider()
 st.header("About the project")
 st.markdown(
     """
-    Kinship Library is an exploratory semantic book recommender. Its catalogue was
-    assembled through thematic book searches and enriched with available metadata.
+    Kinship Library is an exploratory semantic book recommender. Its expanded catalogue contains 1,121 book records combining the original thematic collection, semantic expansion and a 25 book creator curated collection. Available metadata was enriched where possible.
     Books with sufficient text were represented using Sentence Transformer embeddings.
     When you enter an inquiry, the same model represents your words in a 384 dimensional
     semantic space and compares them with the stored book embeddings.
@@ -761,6 +778,8 @@ st.markdown(
     The project also uses TF IDF as a baseline, K Means and PCA to explore the semantic
     structure of the catalogue, SQL for the relational data layer, and Streamlit for
     this interface.
+
+    Curated Kinship is optional. When activated, it gives a gentle ranking boost to the creator curated collection while continuing to search the full catalogue.
 
     The recommendations are based on metadata rather than full book texts. Collection
     paths are retrieval routes rather than ground truth classifications, metadata
