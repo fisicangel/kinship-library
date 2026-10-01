@@ -458,21 +458,18 @@ def render_book_card(row):
         )
 
     isbn_html = f'<div class="isbn">ISBN {html.escape(isbn)}</div>' if isbn else ""
-
-    st.markdown(
-        f"""
-        <div class="book-card">
-            <div class="cover-wrap">{cover_html}</div>
-            <div class="book-title">{html.escape(title)}</div>
-            <div class="book-author">{html.escape(author)}</div>
-            <div class="tag">{html.escape(theme)}</div>
-            {curated_html}
-            <div class="book-description">{html.escape(description)}</div>
-            {isbn_html}
-        </div>
-        """,
-        unsafe_allow_html=True,
+    card_html = (
+        '<div class="book-card">'
+        f'<div class="cover-wrap">{cover_html}</div>'
+        f'<div class="book-title">{html.escape(title)}</div>'
+        f'<div class="book-author">{html.escape(author)}</div>'
+        f'<div class="tag">{html.escape(theme)}</div>'
+        f'{curated_html}'
+        f'<div class="book-description">{html.escape(description)}</div>'
+        f'{isbn_html}'
+        '</div>'
     )
+    st.markdown(card_html, unsafe_allow_html=True)
 
     if isbn:
         search_url = "https://www.google.com/search?q=" + quote_plus(f'ISBN {isbn} "{title}"')
