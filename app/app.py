@@ -440,6 +440,8 @@ def render_book_card(row):
     theme = THEME_LABELS.get(theme_code, theme_code.replace("_", " ").title())
     isbn = safe_text(row.get("isbn_clean"))
     cover = safe_text(row.get("cover_url"))
+    is_curated = safe_text(row.get("is_curated")).lower() in ["true", "1"]
+    curated_html = '<div class="tag">Curated Kinship</div>' if is_curated else ""
 
     if cover and cover_exists(cover):
         cover_html = (
@@ -464,6 +466,7 @@ def render_book_card(row):
             <div class="book-title">{html.escape(title)}</div>
             <div class="book-author">{html.escape(author)}</div>
             <div class="tag">{html.escape(theme)}</div>
+            {curated_html}
             <div class="book-description">{html.escape(description)}</div>
             {isbn_html}
         </div>
@@ -590,6 +593,8 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
+st.caption(f"Explore {len(books):,} book records across five paths of knowledge, including a 25 book creator curated collection.")
 
 st.header("What are you experiencing, questioning or seeking?")
 st.markdown(
