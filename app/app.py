@@ -368,6 +368,20 @@ def normalize_title(title):
     title = re.sub(r"[^a-z0-9]+", " ", title)
     return " ".join(title.split())
 
+def normalize_search_text(value):
+    value = safe_text(value).casefold()
+    value = re.sub(r"[^\w\s]+", " ", value, flags=re.UNICODE)
+    return " ".join(value.split())
+
+
+def flexible_text_match(value, query):
+    value_norm = normalize_search_text(value)
+    query_norm = normalize_search_text(query)
+    if not query_norm:
+        return True
+    terms = query_norm.split()
+    return all(term in value_norm.split() for term in terms)
+
 
 def safe_text(value, fallback=""):
     if pd.isna(value):
@@ -491,84 +505,88 @@ except Exception as exc:
 
 
 with st.sidebar:
-    st.markdown("## Search the Library")
+    st.markdown("## Discover the Library")
     st.caption(
-        "Search the whole catalogue by title or author. Each result shows its path of knowledge so you can continue exploring related books."
+        "Find a known book or author, or browse one of the library's paths of knowledge."
     )
 
-    browse_query = st.text_input(
-        "Title or author",
-        placeholder="For example: Donna Haraway…",
-        key="browse_query",
+    discovery_mode = st.radio(
+        "Explore by",
+        ["Title", "Author", "Path of knowledge"],
+        horizontal=False,
+        key="sidebar_discovery_mode",
     )
 
-    if browse_query.strip():
-        term = browse_query.strip()
-        browse_books = books[
-            books["title"].fillna("").str.contains(term, case=False, regex=False)
-            | books["author"].fillna("").str.contains(term, case=False, regex=False)
-        ].copy()
-
-        browse_books = browse_books.sort_values(
-            by="title",
-            key=lambda s: s.fillna("").str.lower(),
+    if discovery_mode in ["Title", "Author"]:
+        field = "title" if discovery_mode == "Title" else "author"
+        placeholder = (
+            "For example: Staying with the Trouble…"
+            if discovery_mode == "Title"
+            else "For example: Donna Haraway…"
+        )
+        browse_query = st.text_input(
+            discovery_mode,
+            placeholder=placeholder,
+            key=f"browse_{field}_query",
         )
 
-        st.caption(f"{len(browse_books)} matching books")
+        if browse_query.strip():
+            browse_books = books[
+                books[field].apply(lambda value: flexible_text_match(value, browse_query))
+            ].copy()
 
-        if len(browse_books) == 0:
-            st.info("No title or author matched that search.")
-        else:
-            browse_limit = st.selectbox(
-                "Show",
-                [10, 25, 50],
-                index=0,
-                key="browse_limit",
+            browse_books = browse_books.sort_values(
+                by="title",
+                key=lambda s: s.fillna("").str.lower(),
             )
 
-            for _, browse_row in browse_books.head(browse_limit).iterrows():
-                browse_title = safe_text(browse_row.get("title"), "Untitled")
-                browse_author = safe_text(browse_row.get("author"), "Author unavailable")
-                browse_isbn = safe_text(browse_row.get("isbn_clean"))
-                browse_theme_code = safe_text(browse_row.get("collection_theme"))
-                browse_theme_label = THEME_LABELS.get(
-                    browse_theme_code,
-                    browse_theme_code.replace("_", " ").title(),
-                )
-                browse_symbol = THEME_SYMBOLS.get(browse_theme_code, "❧")
+            st.caption(f"{len(browse_books)} matching books")
 
-                if browse_isbn:
-                    browse_url = (
-                        "https://www.google.com/search?q="
-                        + quote_plus(f'ISBN {browse_isbn} "{browse_title}"')
+            if len(browse_books) == 0:
+                st.info(f"No {discovery_mode.lower()} matched that search.")
+            else:
+                for _, browse_row in browse_books.head(8).iterrows():
+                    browse_title = safe_text(browse_row.get("title"), "Untitled")
+                    browse_author = safe_text(browse_row.get("author"), "Author unavailable")
+                    browse_isbn = safe_text(browse_row.get("isbn_clean"))
+                    browse_theme_code = safe_text(browse_row.get("collection_theme"))
+                    browse_theme_label = THEME_LABELS.get(
+                        browse_theme_code,
+                        browse_theme_code.replace("_", " ").title(),
                     )
-                else:
-                    browse_url = (
-                        "https://www.google.com/search?q="
-                        + quote_plus(f'"{browse_title}" "{browse_author}" book')
+                    browse_symbol = THEME_SYMBOLS.get(browse_theme_code, "❧")
+
+                    if browse_isbn:
+                        browse_url = (
+                            "https://www.google.com/search?q="
+                            + quote_plus(f'ISBN {browse_isbn} "{browse_title}"')
+                        )
+                    else:
+                        browse_url = (
+                            "https://www.google.com/search?q="
+                            + quote_plus(f'"{browse_title}" "{browse_author}" book')
+                        )
+
+                    st.markdown(
+                        f"""
+                        <div class="sidebar-book">
+                            <div class="sidebar-book-title">{html.escape(browse_title)}</div>
+                            <div class="sidebar-book-author">{html.escape(browse_author)}</div>
+                            <div class="path-note">{browse_symbol} {html.escape(browse_theme_label)}</div>
+                        </div>
+                        """,
+                        unsafe_allow_html=True,
+                    )
+                    st.link_button(
+                        "Find book ↗",
+                        browse_url,
+                        use_container_width=True,
                     )
 
-                st.markdown(
-                    f"""
-                    <div class="sidebar-book">
-                        <div class="sidebar-book-title">{html.escape(browse_title)}</div>
-                        <div class="sidebar-book-author">{html.escape(browse_author)}</div>
-                        <div class="path-note">{browse_symbol} {html.escape(browse_theme_label)}</div>
-                    </div>
-                    """,
-                    unsafe_allow_html=True,
-                )
-                st.link_button(
-                    "Find book ↗",
-                    browse_url,
-                    use_container_width=True,
-                )
+                if len(browse_books) > 8:
+                    st.caption("Showing the first 8 matches. Add another word to narrow the search.")
+
     else:
-        st.markdown("### Explore a path")
-        st.caption(
-            "Or choose a knowledge path to discover books that entered the library through a similar thematic route."
-        )
-
         browse_theme = st.selectbox(
             "Path of knowledge",
             list(THEME_LABELS.keys()),
@@ -583,18 +601,12 @@ with st.sidebar:
             key=lambda s: s.fillna("").str.lower(),
         )
 
+        st.caption(f"{len(path_books)} books in {THEME_LABELS[browse_theme]}")
         st.caption(
-            f"{len(path_books)} books in {THEME_LABELS[browse_theme]}"
+            "Use this path as a doorway into related books. The main semantic inquiry below remains the best way to receive recommendations."
         )
 
-        preview_limit = st.selectbox(
-            "Show",
-            [10, 25, 50],
-            index=0,
-            key="path_preview_limit",
-        )
-
-        for _, browse_row in path_books.head(preview_limit).iterrows():
+        for _, browse_row in path_books.head(8).iterrows():
             browse_title = safe_text(browse_row.get("title"), "Untitled")
             browse_author = safe_text(browse_row.get("author"), "Author unavailable")
             browse_isbn = safe_text(browse_row.get("isbn_clean"))
@@ -619,11 +631,7 @@ with st.sidebar:
                 """,
                 unsafe_allow_html=True,
             )
-            st.link_button(
-                "Find book ↗",
-                browse_url,
-                use_container_width=True,
-            )
+            st.link_button("Find book ↗", browse_url, use_container_width=True)
 
 
 st.markdown(
