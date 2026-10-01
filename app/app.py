@@ -67,6 +67,44 @@ STARTING_QUESTIONS = {
     "🌀 Living through change": "I am going through a period of change and uncertainty. I am looking for wisdom about transformation, impermanence, courage and how to live with the unknown.",
 }
 
+PATH_DIRECTIONS = {
+    "humans_and_nature": {
+        "Closest resonances": "",
+        "Ecology and living systems": "ecology, living systems, biodiversity, environmental relationships and interdependence",
+        "Belonging and more than human relations": "belonging, kinship, reciprocity and relationships with more than human worlds",
+        "Environmental philosophy": "environmental philosophy, ethics, worldviews and ways of understanding human relationships with Nature",
+        "Care in ecological uncertainty": "ecological uncertainty, grief, care, responsibility, resilience and ways of living through environmental change",
+    },
+    "indigenous_knowledge_americas": {
+        "Closest resonances": "",
+        "Land and reciprocity": "land based knowledge, reciprocity, territory, community and relationships with the living world",
+        "Ancestral knowledge and cosmology": "ancestral knowledge, cosmology, memory, oral traditions and Indigenous ways of knowing",
+        "Decolonial perspectives": "decolonial thought, coloniality, resistance, Indigenous sovereignty and critiques of colonial knowledge systems",
+        "Traditional ecological knowledge": "traditional ecological knowledge, plants, animals, ecosystems, stewardship and intergenerational knowledge",
+    },
+    "yoga_philosophy": {
+        "Closest resonances": "",
+        "Consciousness and the self": "consciousness, self knowledge, mind, awareness, liberation and the nature of reality",
+        "Classical Yoga philosophy": "Yoga Sutras, classical Yoga philosophy, Patanjali, ethics, meditation and liberation",
+        "Indian philosophical traditions": "Indian philosophy, Vedanta, Upanishads, Bhagavad Gita and philosophical inquiry",
+        "Practice and contemplation": "meditation, contemplation, spiritual practice and the relationship between philosophy and lived experience",
+    },
+    "ayurveda_indian_spirituality": {
+        "Closest resonances": "",
+        "Ayurveda and ways of living": "Ayurveda, daily life, balance, food, health traditions and embodied ways of living",
+        "Indian spiritual traditions": "Indian spirituality, devotional traditions, sacred texts, deities and spiritual philosophy",
+        "Body, mind and consciousness": "body, mind, consciousness, subtle body, embodied knowledge and holistic traditions",
+        "Practice and ritual": "spiritual practice, ritual, meditation, devotion and everyday contemplative life",
+    },
+    "yoga_way_of_life": {
+        "Closest resonances": "",
+        "Practice and embodiment": "Yoga practice, embodiment, asana, pranayama, breath, meditation and lived experience",
+        "Philosophy behind the practice": "Yoga philosophy, ethics, meaning, consciousness and philosophical foundations of practice",
+        "Breath and meditation": "breath, pranayama, meditation, attention, nervous system and contemplative practice",
+        "Yoga in everyday life": "Yoga as a way of life, discipline, self inquiry, transformation and everyday application",
+    },
+}
+
 st.markdown(
     """
     <style>
@@ -446,6 +484,45 @@ def recommend(query, books, embeddings, model, n=6, theme=None, orientation=None
     return results
 
 
+def resonance_recommendations(book_index, direction, books, embeddings, model, n=3):
+    selected = books.iloc[book_index]
+    theme_code = safe_text(selected.get("collection_theme"))
+    selected_title = normalize_title(selected.get("title"))
+    base_embedding = embeddings[book_index]
+
+    direction_text = PATH_DIRECTIONS.get(theme_code, {}).get(direction, "")
+    if direction_text:
+        direction_embedding = model.encode(
+            [direction_text],
+            normalize_embeddings=True,
+            show_progress_bar=False,
+        )[0]
+        query_embedding = (0.72 * base_embedding) + (0.28 * direction_embedding)
+        norm = np.linalg.norm(query_embedding)
+        if norm:
+            query_embedding = query_embedding / norm
+    else:
+        query_embedding = base_embedding
+
+    similarities = embeddings @ query_embedding
+    eligible = books["collection_theme"].eq(theme_code).to_numpy()
+    ranked_indices = np.where(eligible)[0]
+    ranked_indices = ranked_indices[np.argsort(similarities[ranked_indices])[::-1]]
+
+    selected_indices = []
+    seen_titles = {selected_title}
+    for idx in ranked_indices:
+        title_key = normalize_title(books.iloc[idx].get("title"))
+        if not title_key or title_key in seen_titles:
+            continue
+        seen_titles.add(title_key)
+        selected_indices.append(idx)
+        if len(selected_indices) == n:
+            break
+
+    return books.iloc[selected_indices].copy()
+
+
 def render_book_card(row):
     title = safe_text(row.get("title"), "Untitled")
     author = safe_text(row.get("author"), "Author unavailable")
@@ -490,7 +567,7 @@ def render_book_card(row):
     else:
         search_url = "https://www.google.com/search?q=" + quote_plus(f'"{title}" "{author}" book')
 
-    st.link_button("Find this book ↗", search_url, use_container_width=True)
+    st.link_button("Find externally ↗", search_url, use_container_width=True)
 
 try:
     books = load_books()
@@ -577,11 +654,14 @@ with st.sidebar:
                         """,
                         unsafe_allow_html=True,
                     )
-                    st.link_button(
-                        "Find book ↗",
-                        browse_url,
+                    if st.button(
+                        "Explore from this book →",
+                        key=f"resonate_{field}_{browse_row.name}",
                         use_container_width=True,
-                    )
+                    ):
+                        st.session_state.resonance_book_index = int(browse_row.name)
+                        st.session_state.resonance_direction = "Closest resonances"
+                        st.rerun()
 
                 if len(browse_books) > 8:
                     st.caption("Showing the first 8 matches. Add another word to narrow the search.")
@@ -631,7 +711,85 @@ with st.sidebar:
                 """,
                 unsafe_allow_html=True,
             )
-            st.link_button("Find book ↗", browse_url, use_container_width=True)
+            if st.button(
+                "Explore from this book →",
+                key=f"resonate_path_{browse_row.name}",
+                use_container_width=True,
+            ):
+                st.session_state.resonance_book_index = int(browse_row.name)
+                st.session_state.resonance_direction = "Closest resonances"
+                st.rerun()
+
+
+if "resonance_book_index" in st.session_state:
+    selected_idx = st.session_state.resonance_book_index
+    if 0 <= selected_idx < len(books):
+        selected_book = books.iloc[selected_idx]
+        selected_title = safe_text(selected_book.get("title"), "Untitled")
+        selected_author = safe_text(selected_book.get("author"), "Author unavailable")
+        selected_theme = safe_text(selected_book.get("collection_theme"))
+        selected_theme_label = THEME_LABELS.get(
+            selected_theme, selected_theme.replace("_", " ").title()
+        )
+        selected_symbol = THEME_SYMBOLS.get(selected_theme, "❧")
+
+        st.markdown("## Follow a thread of resonance")
+        st.markdown(
+            f"Begin with **{selected_title}** by {selected_author}. "
+            f"This book entered Kinship Library through **{selected_symbol} {selected_theme_label}**. "
+            "Choose a direction and the library will find three semantic resonances within this path."
+        )
+
+        direction_options = list(
+            PATH_DIRECTIONS.get(selected_theme, {"Closest resonances": ""}).keys()
+        )
+        current_direction = st.session_state.get(
+            "resonance_direction", direction_options[0]
+        )
+        if current_direction not in direction_options:
+            current_direction = direction_options[0]
+
+        chosen_direction = st.selectbox(
+            "Where would you like to go from here?",
+            direction_options,
+            index=direction_options.index(current_direction),
+            key="resonance_direction_select",
+        )
+        st.session_state.resonance_direction = chosen_direction
+
+        resonance_cols = st.columns([1, 1])
+        with resonance_cols[0]:
+            follow = st.button(
+                "Find 3 books in resonance",
+                type="primary",
+                use_container_width=True,
+            )
+        with resonance_cols[1]:
+            if st.button("Close this thread", use_container_width=True):
+                st.session_state.pop("resonance_book_index", None)
+                st.session_state.pop("resonance_direction", None)
+                st.rerun()
+
+        if follow:
+            with st.spinner("Following this thread through the library…"):
+                model = load_model()
+                resonance_results = resonance_recommendations(
+                    selected_idx,
+                    chosen_direction,
+                    books,
+                    embeddings,
+                    model,
+                    n=3,
+                )
+
+            result_cols = st.columns(3)
+            for col, (_, resonance_row) in zip(
+                result_cols, resonance_results.iterrows()
+            ):
+                with col:
+                    render_book_card(resonance_row)
+
+        st.divider()
 
 
 st.markdown(
