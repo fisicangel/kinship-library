@@ -356,6 +356,73 @@ st.markdown(
         color: #D9E5D0;
     }
 
+    .journey-path {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:.55rem;
+        flex-wrap:wrap;
+        margin:1.4rem 0 1.7rem;
+    }
+
+    .journey-node {
+        padding:.72rem 1rem;
+        border:1px solid rgba(85,122,70,.28);
+        border-radius:999px;
+        background:linear-gradient(145deg,#F8F4E9,#E3E9DC);
+        color:#173A2B;
+        font-family:Georgia, serif;
+        font-weight:700;
+        box-shadow:0 7px 18px rgba(23,58,43,.07);
+    }
+
+    .journey-arrow {
+        color:#8A6848;
+        font-size:1.25rem;
+    }
+
+    .engineering-note {
+        padding:1.2rem 1.35rem;
+        border-left:4px solid #8A6848;
+        border-radius:0 16px 16px 0;
+        background:rgba(231,235,221,.72);
+        color:#26332D;
+        margin:1rem 0;
+    }
+
+    .future-tree {
+        margin-top:1.2rem;
+        padding:2.2rem 1.5rem;
+        border-radius:26px;
+        text-align:center;
+        color:#F4F0E6;
+        background:
+            radial-gradient(circle at 50% 110%, rgba(169,185,154,.55), transparent 35%),
+            linear-gradient(145deg,#173A2B,#315B3E);
+    }
+
+    .future-tree .crown {
+        font-size:2.6rem;
+        letter-spacing:.18em;
+        margin-bottom:.6rem;
+    }
+
+    .future-tree .branch {
+        display:inline-block;
+        margin:.35rem;
+        padding:.55rem .85rem;
+        border:1px solid rgba(244,240,230,.34);
+        border-radius:999px;
+        background:rgba(244,240,230,.08);
+    }
+
+    .future-tree .trunk {
+        width:2px;
+        height:38px;
+        margin:.8rem auto;
+        background:#A9B99A;
+    }
+
     .footer-line {
         text-align:center;
         color:#68756C;
@@ -1072,6 +1139,7 @@ with journey_tabs[1]:
         text="Records",
         title="How the final 1,121 book records were assembled",
     )
+    source_fig.update_traces(marker_color=["#557A46", "#A9B99A", "#B47B4D"])
     source_fig.update_layout(
         showlegend=False,
         xaxis_title="",
@@ -1106,6 +1174,9 @@ with journey_tabs[2]:
             x=[925, 713, 1121],
             textinfo="value+percent initial",
         )
+    )
+    quality_fig.update_traces(
+        marker={"color": ["#315B3E", "#7F956B", "#B47B4D"]}
     )
     quality_fig.update_layout(
         title="The catalogue changed as quality checks and expansion were applied",
@@ -1209,10 +1280,28 @@ with journey_tabs[4]:
     st.markdown("### From a reader's words to books in resonance")
     st.markdown(
         """
-        A reader does not need to begin with a genre or a known title.
-
-        **Inquiry → Sentence Transformer → 384 dimensions → cosine similarity → books**
-
+        A reader does not need to begin with a genre or a known title. Their words
+        become the beginning of a path through the library.
+        """
+    )
+    st.markdown(
+        """
+        <div class="journey-path">
+            <span class="journey-node">Your inquiry</span>
+            <span class="journey-arrow">❧</span>
+            <span class="journey-node">Sentence Transformer</span>
+            <span class="journey-arrow">❧</span>
+            <span class="journey-node">384 dimensions</span>
+            <span class="journey-arrow">❧</span>
+            <span class="journey-node">Cosine similarity</span>
+            <span class="journey-arrow">❧</span>
+            <span class="journey-node">Books in resonance</span>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+    st.markdown(
+        """
         The reader's words are embedded with the same model used for the books.
         Cosine similarity then identifies nearby records in semantic space. Optional
         knowledge orientations gently steer the inquiry without turning the paths into
@@ -1231,16 +1320,19 @@ with journey_tabs[5]:
         supports analysis of books, themes, subjects and semantic clusters while the
         Streamlit application combines the final catalogue with its aligned embedding
         matrix.
-
-        The important engineering constraint is alignment: each catalogue row must
-        correspond to the same row in the stored embedding matrix.
         """
     )
-    sql_example = """SELECT collection_theme, COUNT(*) AS books
-FROM books
-GROUP BY collection_theme
-ORDER BY books DESC;"""
-    st.code(sql_example, language="sql")
+    st.markdown(
+        """
+        <div class="engineering-note">
+            <strong>The important engineering constraint is alignment.</strong><br>
+            Each catalogue row must correspond to the same row in the stored embedding
+            matrix. This keeps every book connected to the correct semantic representation
+            throughout recommendation and exploration.
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
 with journey_tabs[6]:
     st.markdown("### From discovering knowledge to accessing it")
@@ -1260,9 +1352,28 @@ with journey_tabs[6]:
         **Discover → Connect → Access**
         """
     )
-    st.info(
-        "Phase 2 is intentionally separate from the current recommendation system. "
-        "Kinship Library does not host or claim free access to copyrighted books."
+    st.markdown(
+        """
+        <div class="future-tree">
+            <div class="crown">❧ ❧ ❧</div>
+            <div>
+                <span class="branch">Public domain</span>
+                <span class="branch">Open access</span>
+                <span class="branch">Digital libraries</span>
+                <span class="branch">Ancestral knowledge</span>
+            </div>
+            <div class="trunk"></div>
+            <div><strong>DISCOVER</strong> &nbsp;→&nbsp; <strong>CONNECT</strong> &nbsp;→&nbsp; <strong>ACCESS</strong></div>
+            <div style="margin-top:.8rem;opacity:.82;font-size:.9rem;">
+                A future network of responsible pathways from recommendation to knowledge access
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+    st.caption(
+        "Phase 2 remains separate from the current recommendation system. Kinship Library "
+        "does not host or claim free access to copyrighted books."
     )
 
 st.markdown(
