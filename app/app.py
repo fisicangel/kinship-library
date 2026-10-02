@@ -122,7 +122,6 @@ st.markdown(
     }
 
     .stApp {
-        font-size: 1.08rem;
         background:
             radial-gradient(circle at 10% 5%, rgba(169,185,154,.24), transparent 28rem),
             linear-gradient(180deg, #F7F3E9 0%, #F4F0E6 55%, #EEE8DB 100%);
@@ -225,13 +224,13 @@ st.markdown(
     .section-intro {
         max-width: 860px;
         color: #445149;
-        font-size: 1.12rem;
+        font-size: 1.06rem;
         line-height: 1.75;
         margin-bottom: 1.3rem;
     }
 
     .path-note {
-        font-size: .96rem;
+        font-size: .92rem;
         color: #657168;
     }
 
@@ -330,13 +329,13 @@ st.markdown(
 
     .book-description {
         color: #39463F;
-        line-height: 1.62;
-        font-size: .98rem;
+        line-height: 1.58;
+        font-size: .94rem;
     }
 
     .isbn {
         color: #718077;
-        font-size: .84rem;
+        font-size: .82rem;
         margin-top: .8rem;
     }
 
