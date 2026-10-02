@@ -199,7 +199,7 @@ st.markdown(
 
     .hero h1 {
         color: #FAF6EC;
-        font-size: clamp(3.2rem, 7.2vw, 6.35rem);
+        font-size: clamp(3.04rem, 6.84vw, 6.03rem);
         line-height: .98;
         margin: .65rem 0 1rem;
         font-family: Georgia, "Times New Roman", serif;
@@ -390,8 +390,8 @@ st.markdown(
     .story-ocean {
         position:relative;
         overflow:hidden;
-        min-height:430px;
-        padding:4rem 3.5rem;
+        min-height:300px;
+        padding:2.7rem 3rem;
         border-radius:30px;
         color:#FAF6EC;
         background:
@@ -452,8 +452,8 @@ st.markdown(
     .floating-knowledge {
         position:relative;
         z-index:2;
-        min-height:95px;
-        margin-top:1.7rem;
+        min-height:82px;
+        margin-top:1.35rem;
     }
 
     .floating-knowledge span {
@@ -1241,9 +1241,6 @@ with journey_tabs[0]:
         """
         <div class="story-ocean">
             <div class="eyebrow">From ecological anxiety to a question</div>
-            <div class="story-question">
-                What changes when we remember ourselves as participants in a living world?
-            </div>
             <div class="story-text">
                 Kinship Library grew from a period of ecological grief and uncertainty.
                 Artistic practice, time in natural spaces, reading, Yoga and meditation
