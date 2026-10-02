@@ -180,7 +180,7 @@ st.markdown(
     }
 
     .hero {
-        padding: 4.7rem 3.5rem;
+        padding: 5.2rem 3.8rem;
         border-radius: 30px;
         background:
             linear-gradient(120deg, rgba(17,52,37,.97), rgba(52,91,59,.88)),
@@ -199,26 +199,31 @@ st.markdown(
 
     .hero h1 {
         color: #FAF6EC;
-        font-size: clamp(3rem, 7vw, 6.2rem);
-        line-height: .95;
-        margin: .5rem 0 .8rem;
+        font-size: clamp(3.2rem, 7.2vw, 6.35rem);
+        line-height: .98;
+        margin: .65rem 0 1rem;
         font-family: Georgia, "Times New Roman", serif;
-        font-weight: 500;
+        font-weight: 400;
     }
 
     .hero .subtitle {
         color: #DCE5D4;
         font-family: Georgia, "Times New Roman", serif;
-        font-size: 1.5rem;
+        font-size: 1.58rem;
         font-style: italic;
-        margin-bottom: 2rem;
+        font-weight: 400;
+        letter-spacing: .01em;
+        margin-bottom: 2.35rem;
     }
 
     .hero .manifesto {
         color: #F4F0E6;
-        max-width: 850px;
+        max-width: 900px;
+        font-family: Georgia, "Times New Roman", serif;
         font-size: 1.08rem;
-        line-height: 1.8;
+        font-weight: 400;
+        line-height: 1.92;
+        letter-spacing: .005em;
     }
 
     .section-intro {
@@ -381,6 +386,95 @@ st.markdown(
         color: #FAF6EC;
         border-color: #315B3E;
     }
+
+    .story-ocean {
+        position:relative;
+        overflow:hidden;
+        min-height:430px;
+        padding:4rem 3.5rem;
+        border-radius:30px;
+        color:#FAF6EC;
+        background:
+            radial-gradient(ellipse at 76% 22%, rgba(169,185,154,.30), transparent 26rem),
+            radial-gradient(ellipse at 18% 86%, rgba(138,104,72,.14), transparent 22rem),
+            linear-gradient(120deg, rgba(17,52,37,.98), rgba(52,91,59,.90));
+        box-shadow:0 22px 55px rgba(23,58,43,.14);
+        margin:1rem 0 1.6rem;
+    }
+
+    .story-ocean::before,
+    .story-ocean::after {
+        content:"";
+        position:absolute;
+        left:-12%;
+        width:125%;
+        height:210px;
+        border:1px solid rgba(220,229,212,.17);
+        border-radius:50%;
+        pointer-events:none;
+    }
+
+    .story-ocean::before {
+        bottom:-105px;
+        transform:rotate(-3deg);
+    }
+
+    .story-ocean::after {
+        bottom:-64px;
+        transform:rotate(2deg);
+        opacity:.7;
+    }
+
+    .story-ocean .story-question {
+        position:relative;
+        z-index:2;
+        max-width:850px;
+        color:#FAF6EC;
+        font-family:Georgia, "Times New Roman", serif;
+        font-size:clamp(2rem,4vw,3.25rem);
+        font-weight:400;
+        font-style:italic;
+        line-height:1.16;
+        margin:1rem 0 1.5rem;
+    }
+
+    .story-ocean .story-text {
+        position:relative;
+        z-index:2;
+        max-width:820px;
+        font-family:Georgia, "Times New Roman", serif;
+        font-size:1.08rem;
+        font-weight:400;
+        line-height:1.9;
+        color:#F4F0E6;
+    }
+
+    .floating-knowledge {
+        position:relative;
+        z-index:2;
+        min-height:95px;
+        margin-top:1.7rem;
+    }
+
+    .floating-knowledge span {
+        position:absolute;
+        display:inline-block;
+        padding:.48rem .82rem;
+        border:1px solid rgba(244,240,230,.32);
+        border-radius:999px;
+        background:rgba(244,240,230,.055);
+        color:#F4F0E6;
+        font-family:Georgia, "Times New Roman", serif;
+        font-size:1rem;
+        font-style:italic;
+        white-space:nowrap;
+    }
+
+    .floating-knowledge span:nth-child(1) { left:2%; top:8px; }
+    .floating-knowledge span:nth-child(2) { left:20%; top:44px; }
+    .floating-knowledge span:nth-child(3) { left:43%; top:5px; }
+    .floating-knowledge span:nth-child(4) { left:63%; top:50px; }
+    .floating-knowledge span:nth-child(5) { left:79%; top:12px; }
 
     .journey-path {
         display:flex;
@@ -1143,21 +1237,35 @@ journey_tabs = st.tabs([
 ])
 
 with journey_tabs[0]:
-    st.markdown('<div style="height:.7rem"></div>', unsafe_allow_html=True)
-    st.markdown("### From ecological anxiety to a question")
     st.markdown(
         """
-        Kinship Library grew from a period of ecological grief and uncertainty.
-
-        Artistic practice, time in natural spaces, reading, Yoga and meditation
-        gradually opened another possibility: rather than imagining humans outside
-        Nature, what changes when we remember ourselves as participants in a living world?
-
-        **The project begins here:** can technology help us encounter forms of knowledge
-        that support reconnection, reflection and responsible action?
-        """
+        <div class="story-ocean">
+            <div class="eyebrow">From ecological anxiety to a question</div>
+            <div class="story-question">
+                What changes when we remember ourselves as participants in a living world?
+            </div>
+            <div class="story-text">
+                Kinship Library grew from a period of ecological grief and uncertainty.
+                Artistic practice, time in natural spaces, reading, Yoga and meditation
+                gradually opened another possibility: rather than imagining humans outside
+                Nature, how might we return to relationship?
+            </div>
+            <div class="floating-knowledge">
+                <span>❧ Ecology</span>
+                <span>◉ Ancestral knowledge</span>
+                <span>ॐ Yoga philosophy</span>
+                <span>✦ Ayurveda</span>
+                <span>☼ Embodied practice</span>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
     )
-    st.markdown('<div style="height:1.2rem"></div>', unsafe_allow_html=True)
+    st.markdown(
+        '<div class="section-intro"><em>The project begins here:</em> can technology help us '
+        'encounter forms of knowledge that support reconnection, reflection and responsible action?</div>',
+        unsafe_allow_html=True,
+    )
 
 with journey_tabs[1]:
     st.markdown("### A multilayered collection")
