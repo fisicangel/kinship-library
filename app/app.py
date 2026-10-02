@@ -122,6 +122,7 @@ st.markdown(
     }
 
     .stApp {
+        font-size: 1.08rem;
         background:
             radial-gradient(circle at 10% 5%, rgba(169,185,154,.24), transparent 28rem),
             linear-gradient(180deg, #F7F3E9 0%, #F4F0E6 55%, #EEE8DB 100%);
@@ -222,15 +223,15 @@ st.markdown(
     }
 
     .section-intro {
-        max-width: 820px;
+        max-width: 860px;
         color: #445149;
-        font-size: 1.03rem;
+        font-size: 1.12rem;
         line-height: 1.75;
         margin-bottom: 1.3rem;
     }
 
     .path-note {
-        font-size: .88rem;
+        font-size: .96rem;
         color: #657168;
     }
 
@@ -329,13 +330,13 @@ st.markdown(
 
     .book-description {
         color: #39463F;
-        line-height: 1.55;
-        font-size: .91rem;
+        line-height: 1.62;
+        font-size: .98rem;
     }
 
     .isbn {
         color: #718077;
-        font-size: .78rem;
+        font-size: .84rem;
         margin-top: .8rem;
     }
 
@@ -354,6 +355,95 @@ st.markdown(
 
     .creator strong {
         color: #D9E5D0;
+    }
+
+    div[data-baseweb="tab-list"] {
+        gap: .45rem;
+        flex-wrap: wrap;
+    }
+
+    button[data-baseweb="tab"] {
+        background: rgba(227,233,220,.72);
+        border: 1px solid rgba(85,122,70,.22);
+        border-radius: 999px;
+        padding: .58rem .9rem;
+        min-height: 2.8rem;
+        font-size: .98rem;
+        transition: transform .18s ease, background .18s ease;
+    }
+
+    button[data-baseweb="tab"]:hover {
+        background: #D8E2CF;
+        transform: translateY(-1px);
+    }
+
+    button[data-baseweb="tab"][aria-selected="true"] {
+        background: #315B3E;
+        color: #FAF6EC;
+        border-color: #315B3E;
+    }
+
+    .story-ocean {
+        position: relative;
+        overflow: hidden;
+        min-height: 390px;
+        padding: 3rem 2.5rem;
+        border-radius: 28px;
+        background:
+            radial-gradient(circle at 18% 20%, rgba(244,240,230,.20), transparent 18rem),
+            linear-gradient(145deg,#315B3E 0%,#557A46 48%,#7F956B 100%);
+        box-shadow: 0 18px 42px rgba(23,58,43,.14);
+        color:#FAF6EC;
+        margin:1rem 0 1.4rem;
+    }
+
+    .story-ocean:before,
+    .story-ocean:after {
+        content:"";
+        position:absolute;
+        width:125%;
+        height:150px;
+        left:-12%;
+        border-radius:50%;
+        border:1px solid rgba(244,240,230,.18);
+        transform:rotate(-4deg);
+    }
+
+    .story-ocean:before { bottom:-72px; }
+    .story-ocean:after { bottom:-38px; opacity:.65; }
+
+    .story-ocean h3 {
+        color:#FAF6EC;
+        font-family:Georgia, serif;
+        font-size:2rem;
+        max-width:720px;
+        margin-top:.25rem;
+    }
+
+    .story-ocean p {
+        position:relative;
+        z-index:2;
+        max-width:790px;
+        font-size:1.12rem;
+        line-height:1.8;
+    }
+
+    .floating-paths {
+        position:relative;
+        z-index:2;
+        display:flex;
+        flex-wrap:wrap;
+        gap:.55rem;
+        margin-top:1.5rem;
+    }
+
+    .floating-paths span {
+        padding:.48rem .78rem;
+        border:1px solid rgba(250,246,236,.36);
+        border-radius:999px;
+        background:rgba(23,58,43,.18);
+        color:#FAF6EC;
+        font-family:Georgia, serif;
     }
 
     .journey-path {
@@ -1109,17 +1199,31 @@ journey_tabs = st.tabs([
 ])
 
 with journey_tabs[0]:
-    st.markdown("### From ecological anxiety to a question")
     st.markdown(
         """
-        Kinship Library grew from a period of ecological grief and uncertainty.
-        Artistic practice, time in natural spaces, reading, Yoga and meditation
-        gradually opened another possibility: rather than imagining humans outside
-        Nature, what changes when we remember ourselves as participants in a living world?
-
-        **The project begins here:** can technology help us encounter forms of knowledge
-        that support reconnection, reflection and responsible action?
-        """
+        <div class="story-ocean">
+            <div class="eyebrow">From ecological anxiety to a question</div>
+            <h3>What changes when we remember ourselves as participants in a living world?</h3>
+            <p>
+                Kinship Library grew from a period of ecological grief and uncertainty.
+                Artistic practice, time in natural spaces, reading, Yoga and meditation
+                gradually opened another possibility: rather than imagining humans outside
+                Nature, how might we return to relationship?
+            </p>
+            <div class="floating-paths">
+                <span>❧ Ecology</span>
+                <span>◉ Ancestral knowledge</span>
+                <span>ॐ Yoga philosophy</span>
+                <span>✦ Ayurveda</span>
+                <span>☼ Embodied practice</span>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+    st.markdown(
+        "**The project begins here:** can technology help us encounter forms of knowledge "
+        "that support reconnection, reflection and responsible action?"
     )
 
 with journey_tabs[1]:
@@ -1207,6 +1311,7 @@ with journey_tabs[3]:
             markers=True,
             title="Elbow Method",
         )
+        elbow_fig.update_traces(line_color="#B47B4D", marker_color="#8A6848")
         elbow_fig.update_layout(
             xaxis_title="Number of clusters",
             yaxis_title="Inertia",
@@ -1222,7 +1327,8 @@ with journey_tabs[3]:
             markers=True,
             title="Silhouette Score",
         )
-        silhouette_fig.add_vline(x=3, line_dash="dash")
+        silhouette_fig.update_traces(line_color="#557A46", marker_color="#315B3E")
+        silhouette_fig.add_vline(x=3, line_dash="dash", line_color="#B47B4D")
         silhouette_fig.update_layout(
             xaxis_title="Number of clusters",
             yaxis_title="Silhouette score",
@@ -1261,6 +1367,7 @@ with journey_tabs[3]:
         x="PCA 1",
         y="PCA 2",
         color="Path",
+        color_discrete_sequence=["#315B3E", "#557A46", "#8A6848", "#B47B4D", "#7F956B"],
         hover_name="Title",
         hover_data={"Author": True, "PCA 1": False, "PCA 2": False},
         title="A two dimensional view of the final semantic space",
@@ -1380,7 +1487,7 @@ st.markdown(
     """
     <section class="creator">
         <div class="eyebrow">About the Creator</div>
-        <h2>Leidy Angélica Roa</h2>
+        <h2>Angélica Roa</h2>
         <p><strong>Bio artist · Yogi · Physicist</strong></p>
         <p>
             Leidy Angélica Roa is a Colombian bio artist, choreographer, yogi and
@@ -1403,7 +1510,7 @@ st.markdown(
     </section>
     <div class="footer-line">
         Kinship Library was created from a question: Can technology help us find
-        our way back into relationship?
+        our way back into relationship starting with the encounter between a question and a book?
     </div>
     """,
     unsafe_allow_html=True,
