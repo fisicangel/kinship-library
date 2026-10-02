@@ -382,69 +382,6 @@ st.markdown(
         border-color: #315B3E;
     }
 
-    .story-ocean {
-        position: relative;
-        overflow: hidden;
-        min-height: 390px;
-        padding: 3rem 2.5rem;
-        border-radius: 28px;
-        background:
-            radial-gradient(circle at 18% 20%, rgba(244,240,230,.20), transparent 18rem),
-            linear-gradient(145deg,#315B3E 0%,#557A46 48%,#7F956B 100%);
-        box-shadow: 0 18px 42px rgba(23,58,43,.14);
-        color:#FAF6EC;
-        margin:1rem 0 1.4rem;
-    }
-
-    .story-ocean:before,
-    .story-ocean:after {
-        content:"";
-        position:absolute;
-        width:125%;
-        height:150px;
-        left:-12%;
-        border-radius:50%;
-        border:1px solid rgba(244,240,230,.18);
-        transform:rotate(-4deg);
-    }
-
-    .story-ocean:before { bottom:-72px; }
-    .story-ocean:after { bottom:-38px; opacity:.65; }
-
-    .story-ocean h3 {
-        color:#FAF6EC;
-        font-family:Georgia, serif;
-        font-size:2rem;
-        max-width:720px;
-        margin-top:.25rem;
-    }
-
-    .story-ocean p {
-        position:relative;
-        z-index:2;
-        max-width:790px;
-        font-size:1.12rem;
-        line-height:1.8;
-    }
-
-    .floating-paths {
-        position:relative;
-        z-index:2;
-        display:flex;
-        flex-wrap:wrap;
-        gap:.55rem;
-        margin-top:1.5rem;
-    }
-
-    .floating-paths span {
-        padding:.48rem .78rem;
-        border:1px solid rgba(250,246,236,.36);
-        border-radius:999px;
-        background:rgba(23,58,43,.18);
-        color:#FAF6EC;
-        font-family:Georgia, serif;
-    }
-
     .journey-path {
         display:flex;
         align-items:center;
@@ -741,14 +678,14 @@ except Exception as exc:
 
 
 with st.sidebar:
-    st.markdown("## Discover the Library")
+    st.markdown("## Other ways to Browse the Library")
     st.caption(
-        "Find a known book or author, or browse one of the library's paths of knowledge."
+        "Already have a path, author or title in mind? Use these alternative ways to move through the collection."
     )
 
     discovery_mode = st.radio(
         "Explore by",
-        ["Title", "Author", "Path of knowledge"],
+        ["Path of knowledge", "Author", "Title"],
         horizontal=False,
         key="sidebar_discovery_mode",
     )
@@ -1127,12 +1064,20 @@ if explore:
                     render_book_card(row)
 
 st.divider()
-st.header("Browse paths of knowledge")
+st.header("Other ways to Browse the Library")
 st.markdown(
     '<div class="section-intro">'
-    "Kinship Library was assembled through five thematic search routes. These paths "
-    "bring different bodies of knowledge into conversation without suggesting that "
-    "they are interchangeable or share a single worldview."
+    "Your inquiry is the main doorway into Kinship Library. You can also move through "
+    "the collection by <strong>Paths of Knowledge</strong>, <strong>Author</strong> or "
+    "<strong>Title</strong>. Open the sidebar to use these other ways of browsing."
+    "</div>",
+    unsafe_allow_html=True,
+)
+st.markdown("### Paths of Knowledge")
+st.markdown(
+    '<div class="section-intro">'
+    "These five thematic search routes bring different bodies of knowledge into "
+    "conversation without suggesting that they are interchangeable or share a single worldview."
     "</div>",
     unsafe_allow_html=True,
 )
@@ -1150,7 +1095,7 @@ for col, (code, label) in zip(path_cols, THEME_LABELS.items()):
         st.caption(f"{count} books")
 
 st.caption(
-    "Open the Browse the Library sidebar to search these paths directly by title or author."
+    "Open the sidebar to browse by Path of Knowledge, Author or Title."
 )
 
 st.divider()
@@ -1198,32 +1143,21 @@ journey_tabs = st.tabs([
 ])
 
 with journey_tabs[0]:
+    st.markdown('<div style="height:.7rem"></div>', unsafe_allow_html=True)
+    st.markdown("### From ecological anxiety to a question")
     st.markdown(
         """
-        <div class="story-ocean">
-            <div class="eyebrow">From ecological anxiety to a question</div>
-            <h3>What changes when we remember ourselves as participants in a living world?</h3>
-            <p>
-                Kinship Library grew from a period of ecological grief and uncertainty.
-                Artistic practice, time in natural spaces, reading, Yoga and meditation
-                gradually opened another possibility: rather than imagining humans outside
-                Nature, how might we return to relationship?
-            </p>
-            <div class="floating-paths">
-                <span>❧ Ecology</span>
-                <span>◉ Ancestral knowledge</span>
-                <span>ॐ Yoga philosophy</span>
-                <span>✦ Ayurveda</span>
-                <span>☼ Embodied practice</span>
-            </div>
-        </div>
-        """,
-        unsafe_allow_html=True,
+        Kinship Library grew from a period of ecological grief and uncertainty.
+
+        Artistic practice, time in natural spaces, reading, Yoga and meditation
+        gradually opened another possibility: rather than imagining humans outside
+        Nature, what changes when we remember ourselves as participants in a living world?
+
+        **The project begins here:** can technology help us encounter forms of knowledge
+        that support reconnection, reflection and responsible action?
+        """
     )
-    st.markdown(
-        "**The project begins here:** can technology help us encounter forms of knowledge "
-        "that support reconnection, reflection and responsible action?"
-    )
+    st.markdown('<div style="height:1.2rem"></div>', unsafe_allow_html=True)
 
 with journey_tabs[1]:
     st.markdown("### A multilayered collection")
