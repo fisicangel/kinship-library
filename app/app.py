@@ -8,7 +8,10 @@ import requests
 import numpy as np
 import pandas as pd
 import streamlit as st
+import plotly.express as px
+import plotly.graph_objects as go
 from sentence_transformers import SentenceTransformer
+from sklearn.decomposition import PCA
 
 
 st.set_page_config(
@@ -1016,6 +1019,251 @@ st.markdown(
     and is not medical, psychological or spiritual advice.
     """
 )
+
+st.divider()
+st.header("How this was created")
+st.markdown(
+    '<div class="section-intro">'
+    "From a personal question to a multilayered semantic library. Explore the stages "
+    "that shaped Kinship Library, from collection and enrichment to NLP, clustering, "
+    "SQL and the final interactive encounter."
+    "</div>",
+    unsafe_allow_html=True,
+)
+
+journey_tabs = st.tabs([
+    "01 · Question",
+    "02 · Collect",
+    "03 · Enrich",
+    "04 · Understand",
+    "05 · Connect",
+    "06 · Structure",
+    "07 · What comes next",
+])
+
+with journey_tabs[0]:
+    st.markdown("### From ecological anxiety to a question")
+    st.markdown(
+        """
+        Kinship Library grew from a period of ecological grief and uncertainty.
+        Artistic practice, time in natural spaces, reading, Yoga and meditation
+        gradually opened another possibility: rather than imagining humans outside
+        Nature, what changes when we remember ourselves as participants in a living world?
+
+        **The project begins here:** can technology help us encounter forms of knowledge
+        that support reconnection, reflection and responsible action?
+        """
+    )
+
+with journey_tabs[1]:
+    st.markdown("### A multilayered collection")
+    source_counts = pd.DataFrame({
+        "Layer": [
+            "Original NLP ready collection",
+            "Semantic expansion",
+            "Creator curated collection",
+        ],
+        "Records": [713, 383, 25],
+    })
+    source_fig = px.bar(
+        source_counts,
+        x="Layer",
+        y="Records",
+        text="Records",
+        title="How the final 1,121 book records were assembled",
+    )
+    source_fig.update_layout(
+        showlegend=False,
+        xaxis_title="",
+        yaxis_title="Book records",
+        margin=dict(l=20, r=20, t=60, b=20),
+    )
+    st.plotly_chart(source_fig, use_container_width=True)
+    st.caption(
+        "The final catalogue combines API discovery, semantic screening and a 25 book "
+        "creator curated collection. The paths of knowledge describe how books entered "
+        "the library rather than fixed genres."
+    )
+
+with journey_tabs[2]:
+    st.markdown("### From metadata to semantic text")
+    st.markdown(
+        """
+        The first processed catalogue contained **925 records**. Descriptions and other
+        available metadata were combined into semantic text. Books needed at least
+        **15 words of semantic text** to enter the first NLP modeling stage, leaving
+        **713 NLP eligible records**.
+
+        **Title + author + subjects + description → semantic text → embedding**
+
+        TF IDF provided an interpretable word based baseline. Sentence Transformers
+        then represented meaning in a **384 dimensional semantic space**.
+        """
+    )
+    quality_fig = go.Figure(
+        go.Funnel(
+            y=["Processed catalogue", "NLP eligible", "Final expanded catalogue"],
+            x=[925, 713, 1121],
+            textinfo="value+percent initial",
+        )
+    )
+    quality_fig.update_layout(
+        title="The catalogue changed as quality checks and expansion were applied",
+        margin=dict(l=20, r=20, t=60, b=20),
+    )
+    st.plotly_chart(quality_fig, use_container_width=True)
+
+with journey_tabs[3]:
+    st.markdown("### Exploring semantic structure")
+    k_results = pd.DataFrame({
+        "k": [2, 3, 4, 5, 6, 7, 8, 9, 10],
+        "inertia": [
+            481.535400, 451.286560, 438.315247, 425.636902, 418.192017,
+            412.426758, 407.518433, 401.211487, 397.608276,
+        ],
+        "silhouette": [
+            0.096475, 0.098287, 0.085195, 0.070670, 0.070912,
+            0.060081, 0.068552, 0.063257, 0.066516,
+        ],
+    })
+
+    chart_a, chart_b = st.columns(2)
+    with chart_a:
+        elbow_fig = px.line(
+            k_results,
+            x="k",
+            y="inertia",
+            markers=True,
+            title="Elbow Method",
+        )
+        elbow_fig.update_layout(
+            xaxis_title="Number of clusters",
+            yaxis_title="Inertia",
+            margin=dict(l=20, r=20, t=60, b=20),
+        )
+        st.plotly_chart(elbow_fig, use_container_width=True)
+
+    with chart_b:
+        silhouette_fig = px.line(
+            k_results,
+            x="k",
+            y="silhouette",
+            markers=True,
+            title="Silhouette Score",
+        )
+        silhouette_fig.add_vline(x=3, line_dash="dash")
+        silhouette_fig.update_layout(
+            xaxis_title="Number of clusters",
+            yaxis_title="Silhouette score",
+            margin=dict(l=20, r=20, t=60, b=20),
+        )
+        st.plotly_chart(silhouette_fig, use_container_width=True)
+
+    st.markdown(
+        """
+        **K = 3** produced the highest Silhouette score, approximately **0.098**.
+        The low score matters: it suggests substantial overlap rather than sharply
+        separated categories. That is consistent with an interdisciplinary catalogue
+        in which ecology, philosophy, spirituality and embodied practice can intersect.
+        """
+    )
+
+    @st.cache_data
+    def make_pca_view(embedding_array, theme_values, title_values, author_values):
+        coords = PCA(n_components=2, random_state=42).fit_transform(embedding_array)
+        return pd.DataFrame({
+            "PCA 1": coords[:, 0],
+            "PCA 2": coords[:, 1],
+            "Path": theme_values,
+            "Title": title_values,
+            "Author": author_values,
+        })
+
+    pca_df = make_pca_view(
+        embeddings,
+        books["collection_theme"].map(THEME_LABELS).fillna("Other").to_numpy(),
+        books["title"].fillna("Untitled").to_numpy(),
+        books["author"].fillna("Author unavailable").to_numpy(),
+    )
+    pca_fig = px.scatter(
+        pca_df,
+        x="PCA 1",
+        y="PCA 2",
+        color="Path",
+        hover_name="Title",
+        hover_data={"Author": True, "PCA 1": False, "PCA 2": False},
+        title="A two dimensional view of the final semantic space",
+        opacity=0.72,
+    )
+    pca_fig.update_layout(
+        legend_title_text="Path of knowledge",
+        margin=dict(l=20, r=20, t=60, b=20),
+    )
+    st.plotly_chart(pca_fig, use_container_width=True)
+    st.caption(
+        "PCA is used here for visualization. The recommendation system works in the "
+        "full 384 dimensional embedding space."
+    )
+
+with journey_tabs[4]:
+    st.markdown("### From a reader's words to books in resonance")
+    st.markdown(
+        """
+        A reader does not need to begin with a genre or a known title.
+
+        **Inquiry → Sentence Transformer → 384 dimensions → cosine similarity → books**
+
+        The reader's words are embedded with the same model used for the books.
+        Cosine similarity then identifies nearby records in semantic space. Optional
+        knowledge orientations gently steer the inquiry without turning the paths into
+        rigid classifications.
+
+        The app also supports book to book exploration through **Follow a thread of
+        resonance**, allowing one book to become a doorway to another.
+        """
+    )
+
+with journey_tabs[5]:
+    st.markdown("### A relational layer behind the interface")
+    st.markdown(
+        """
+        SQLite was used to structure and inspect the modeling catalogue. The SQL layer
+        supports analysis of books, themes, subjects and semantic clusters while the
+        Streamlit application combines the final catalogue with its aligned embedding
+        matrix.
+
+        The important engineering constraint is alignment: each catalogue row must
+        correspond to the same row in the stored embedding matrix.
+        """
+    )
+    sql_example = """SELECT collection_theme, COUNT(*) AS books
+FROM books
+GROUP BY collection_theme
+ORDER BY books DESC;"""
+    st.code(sql_example, language="sql")
+
+with journey_tabs[6]:
+    st.markdown("### From discovering knowledge to accessing it")
+    st.markdown(
+        """
+        The next phase of Kinship Library will explore connections and possible
+        collaborations with **verified public domain and open access digital libraries**.
+
+        The aim is to let readers move, where legally and ethically possible, from
+        discovering a book to accessing an open edition. This is especially relevant
+        for ancient philosophical texts, public domain works and forms of ancestral
+        and embodied knowledge that can be responsibly shared through open collections.
+
+        Future access labels should clearly distinguish **public domain**, **open
+        access**, **digital lending** and **copyrighted works**.
+
+        **Discover → Connect → Access**
+        """
+    )
+    st.info(
+        "Phase 2 is intentionally separate from the current recommendation system. "
+        "Kinship Library does not host or claim free access to copyrighted books."
+    )
 
 st.markdown(
     """
